@@ -1,5 +1,5 @@
 ---
-title: Hello world
+title: Outline Studio
 layout: default
 ---
 
