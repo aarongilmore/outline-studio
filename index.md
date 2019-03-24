@@ -1,6 +1,6 @@
 ---
 title: Hello world
-layout: home
+layout: default
 ---
 
 ## Sup
