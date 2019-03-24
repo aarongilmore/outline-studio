@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Ivar Bold;
+  src: url(/assets/fonts/IvarHeadline-Bold.otf);
+}
+
+@font-face {
+  font-family: Ivar Medium;
+  src: url(/assets/fonts/IvarHeadline-Medium.otf);
+}
+
+@font-face {
+    font-family: Inter Light;
+    src: url(/assets/fonts/Inter-Light-BETA.otf);
+  }
+  
+  @font-face {
+    font-family: Inter Light Italic;
+    src: url(/assets/fonts/Inter-LightItalic-BETA.otf);
+  }
+
+  body {
+      font-family: "Inter Light", sans-serif;
+      font-size: 18px;
+      line-height: 1.5em;
+  }
+
+  h2 {
+    font-family: "Ivar Medium", sans-serif;
+  }
+
