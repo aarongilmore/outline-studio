@@ -1,8 +1,8 @@
 ---
 title: Hello world
-layout: default
+layout: home
 ---
 
-## We help our partners speak clearly and consistently. Together, we'll find your voice.
+## Sup
 
 This is a website.
