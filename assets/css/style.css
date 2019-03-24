@@ -19,12 +19,21 @@
   }
 
   body {
-      font-family: "Inter Light", sans-serif;
-      font-size: 18px;
-      line-height: 1.5em;
+    background-image: url(/assets/images/background.svg);
+    background-repeat: none;
+    background-size: cover;
+    font-family: "Inter Light", sans-serif;
+  }
+
+  .vh-100 {
+    height: 100vh;
+  }
+
+  h1.large {
+    font-family: "Ivar Bold", serif;
   }
 
   h2 {
-    font-family: "Ivar Medium", sans-serif;
+    font-family: "Ivar Medium", serif;
   }
 
