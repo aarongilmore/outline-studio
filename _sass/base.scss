@@ -1,0 +1,25 @@
+@import "fluid-type";
+@import "typography";
+@import "footer";
+@import "variables";
+
+//Mixins
+@import "breakpoints";
+
+body {
+    padding: 0;
+    background-image: url(/assets/images/background.svg);
+    background-repeat: none;
+    background-size: cover;
+    font-family: "Inter Light", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+a:hover {
+    color: $dark-pink;
+}
+
+nav a {
+    font-family: "Inter Light", sans-serif;
+}

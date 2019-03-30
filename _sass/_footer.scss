@@ -1,0 +1,9 @@
+@import 'variables';
+
+footer {
+    background-color: $pink;
+    // margin-left: calc(var(--lineHeight)*-2);
+    // margin-right: calc(var(--lineHeight)*-2);
+    // margin-bottom: calc(var(--lineHeight)*-3);
+    height: 200px;
+}
