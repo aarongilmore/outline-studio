@@ -1,5 +1,6 @@
 @import "fluid-type";
 @import "typography";
+@import "nav";
 @import "footer";
 @import "variables";
 
@@ -12,14 +13,18 @@ body {
     background-repeat: none;
     background-size: cover;
     font-family: "Inter Light", sans-serif;
-    font-style: normal;
-    font-stretch: normal;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 a:hover {
     color: $dark-pink;
 }
 
-nav a {
-    font-family: "Inter Light", sans-serif;
+a:active {
+    color: $dark-pink;
+}
+
+.vh-100-calc {
+    height: calc(100vh - 156px);
 }

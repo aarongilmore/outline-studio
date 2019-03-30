@@ -10,26 +10,15 @@
     <link rel="stylesheet" href="/assets/css/style.css">        
   </head>
   <body>
-      <header class="bg-white fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-        <nav class="f5 fr">
-          <a class="link dim dib mr3" href="#" title="Home">Home</a>
-          <a class="link dim dib mr3" href="#" title="About">Contact</a>
-        </nav>
-      </header>
-      <grid columns=8 columns-s=1 class="vh-100-l flex flex-row-ns flex-column-m flex-column items-center">
-        <c span=4 class="w-50-ns w-100">
-          <h1 class="tc">Outline Studio</h1>
+      {% include header.html %}
+      <grid columns=8 columns-s=1 class="vh-100-calc flex flex-row-ns flex-column-m flex-column items-center ph6-ns ph3-m ph3">
+        <c span=4 class="w-50-ns w-100-m">
+          <h1>Outline Studio</h1>
         </c>
-        <c span=4 class="w-50-ns w-100 -indent">
+        <c span=4 class="w-50-ns w-100-m -indent">
           {{ content }}
         </c>
       </grid>
-      <footer>
-        <grid columns=4 columns-s=1>
-          <c span=1-2>Test</c>
-          <c span=1>Test</c>
-          <c span=1>Test</c>
-        </grid>
-      </footer>
+      {% include footer.html %}
   </body>
 </html>

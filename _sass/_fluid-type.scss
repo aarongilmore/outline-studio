@@ -28,11 +28,13 @@
 
 
 p {
-  @include fluid-type(16px, 18px);
-  font-weight: normal
+  @include fluid-type(18px, 18px);
 }
 
 h1 {
-  @include fluid-type(28px, 90px);
-  font-weight: 100;
+  @include fluid-type(42px, 90px);
+}
+
+h2 {
+  @include fluid-type(1.5rem, 2.2rem);
 }
