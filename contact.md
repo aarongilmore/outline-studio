@@ -1,8 +1,8 @@
 ---
 title: Outline Studio
-layout: default
+layout: contact
 ---
 
 ## Get in touch
 
-Hey
+Get in touch
