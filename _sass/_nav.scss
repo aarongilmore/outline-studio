@@ -1,7 +1,7 @@
 nav {
     height: 55vh;
     @include breakpoint(lg) {
-        height: 100%;
+        
     }
     a {
         color: $gray;
