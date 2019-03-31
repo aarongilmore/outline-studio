@@ -44,10 +44,3 @@ p {
         margin-left: 2em;
     }
 }
-
-.mtm {
-    margin-top: 24em;
-    @include breakpoint(lg) {
-        margin-top: 0em;
-    }
-}
