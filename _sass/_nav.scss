@@ -1,11 +1,14 @@
 nav {
-    height: 55vh;
+    height: 63vh;
     background-color: transparent;
     border: none;
     @include breakpoint(lg) {
+        transition: all 0.5s ease;
         height: auto;
         background-color: white;
         border-bottom: 1px solid #f8f8f8;
+        top: 0;
+        transition: top 0.2s ease-in-out;
     }
     a {
         color: $gray;
@@ -19,4 +22,8 @@ nav {
     a:active {
         color: $dark-pink;
     }
+}
+
+.nav-up {
+    top: -100px; // same as header height. use variables in LESS/SASS
 }
