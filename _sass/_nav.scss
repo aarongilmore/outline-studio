@@ -1,7 +1,11 @@
 nav {
     height: 55vh;
+    background-color: transparent;
+    border: none;
     @include breakpoint(lg) {
         height: auto;
+        background-color: white;
+        border-bottom: 1px solid #f8f8f8;
     }
     a {
         color: $gray;
