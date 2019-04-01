@@ -9,8 +9,12 @@ nav {
     }
     a {
         color: $gray;
-        font-size: 22px;
+        font-size: 18px;
+        margin-bottom: 7px;
         font-family: "Inter Light", sans-serif;
+        @include breakpoint(lg) {
+            font-size: 22px;
+        }
     }
     a:active {
         color: $dark-pink;
