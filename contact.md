@@ -1,5 +1,5 @@
 ---
-title: Outline Studio
+title: Outline Studio — We help our partners speak clearly and consistently
 layout: contact
 ---
 
