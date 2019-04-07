@@ -1,6 +1,8 @@
 ---
 title: Outline Studio — We help our partners speak clearly and consistently
-layout: contact
+layout: thanks
 ---
 
-## Get in touch
+## Thanks
+
+We'll be in touch soon.

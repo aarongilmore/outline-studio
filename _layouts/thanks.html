@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">        
+  </head>
+  <body>
+      {% include header.html %}
+      <grid columns=8 columns-s=1 class="vh-100-ns flex flex-row-ns flex-column-m flex-column items-center ph6-ns ph3-m ph3">
+        <c span=4 class="w-50-ns w-100-m">
+          <h1>Outline Studio</h1>
+        </c>
+        <c span=4 class="w-50-ns w-100-m -indent">
+
+                {{ content }}
+        </c>
+      </grid>
+      {% include footer.html %}
+
+  </body>
+</html>

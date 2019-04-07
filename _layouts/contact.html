@@ -11,22 +11,69 @@
   </head>
   <body>
       {% include header.html %}
-      <grid columns=8 columns-s=1 class="vh-100-calc flex flex-row-ns flex-column-m flex-column items-center ph6-ns ph3-m ph3">
+      <grid columns=8 columns-s=1 class="vh-100-ns flex flex-row-ns flex-column-m flex-column items-center ph6-ns ph3-m ph3">
         <c span=4 class="w-50-ns w-100-m">
           <h1>Outline Studio</h1>
         </c>
         <c span=4 class="w-50-ns w-100-m -indent">
+            {{ content }}
+                  <!-- <form id="form_id">
+                    <div class="flex flex-row-ns flex-column-m">
+                      <div class="mr2">
+                        <label for="full-name" class="f6 b db mb2">Full Name</label>
+                        <input name="full-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" placeholder="Full Name" required/>
+                      </div>
+                      <div>
+                        <label for="company-name" class="f6 b db mb2">Company Name</label>
+                        <input name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
+                      </div>
+                      </div>
+                        
+                        
+                        
+                        
+                        <div class="dib">
+                            <label for="name" class="f6 b db mb2">Name</label>
+                            <input name="name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
+  
+                            <label for="email" class="f6 b db mb2">Email address</label>
+                            <input name="email" type="email" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
+  
+                            
+                            <input type="submit" id="submit" class="db link"/>
+                        </div>
+                      </form> -->
 
-                  <form accept-charset="UTF-8" action="https://formkeep.com/f/47d1d242d8bd" method="POST">
-                    <input type="hidden" name="utf8" value="✓">
-                  
-                    <label for="email-address">Email Address</label>
-                    <input type="email" id="email-address" name="email">
-                  
-                    <button type="submit">Submit</button>
-                  </form>
+                      <form action="" class="form mw6" id="form_id">
+                        <div class="flex flex-wrap-ns flex-row-ns flex-column-m">
+                          <div class="form-group pr3-ns w-50-ns w-100-m mb3 relative">
+                            <label for="full-name" class="b form-label">Full Name</label>
+                            <input name="full-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required /> 
+                          </div>
+
+                          <div class="form-group w-50-ns w-100-m mb3 relative">  
+                            <label for="company-name" class="b form-label">Company Name</label>
+                            <input name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required />
+                          </div>
+
+                          <div class="form-group pr3-ns w-100-ns mb3 relative">
+                              <label for="full-name" class="b form-label">Email Address</label>
+                              <input name="full-name" type="text" class="db border-box hover-black w-100 ba b--black-20 pa2 mb2 form-input" required /> 
+                            </div>
+  
+                          <div class="form-group pr3-ns w-100-ns mb3 relative">
+                            <label for="company-name" class="b form-label-textarea">Tell us more about your project</label>
+                            <textarea name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required /></textarea>
+                          </div>
+                        </div>
+
+                        
+                      </form>
         </c>
       </grid>
       {% include footer.html %}
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="https://static.formx.stream/tracker/v1/bundle.js"></script> 
+      <script rel="javascript" src="/assets/js/main.js"></script>     
   </body>
 </html>

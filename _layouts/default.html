@@ -11,56 +11,18 @@
   </head>
   <body>
       {% include header.html %}
-        <grid columns=8 columns-s=1 class="vh-100-ns flex flex-row-ns flex-column-m flex-column items-center-ns ph6-ns ph3-m ph3 mtm mw9 center">
+      <section class="mt6-m mt0 pb5">
+        <grid columns=8 columns-s=1 class="vh-100-ns flex flex-column flex-column-m flex-row-l items-center-ns ph3 ph4-m ph5-ns center main-content">
           <c span=4 span-s=1 class="w-50-ns w-100-m">
-            <h1 class="mb1">Outline Studio</h1>
+            <h1 class="mb1 tc-ns tl-m">Outline Studio</h1>
           </c>
           <c span=4 span-s=1 class="w-50-ns w-100-m -indent mt4">
             {{ content }}
           </c>
         </grid>
+      </section>
       {% include footer.html %}
   </body>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-    $( "c h2" ).addClass( "mw7" );
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('nav').outerHeight();
-
-    $(window).scroll(function(event){
-        didScroll = true;
-    });
-
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-        
-        // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
-            return;
-        
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
-            $('nav').removeClass('nav-down').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if(st + $(window).height() < $(document).height()) {
-                $('nav').removeClass('nav-up').addClass('nav-down');
-            }
-        }
-        
-        lastScrollTop = st;
-    }
-  </script>
+  <script rel="javascript" src="/assets/js/main.js"></script>
 </html>

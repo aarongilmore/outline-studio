@@ -1,21 +1,40 @@
+@import "breakpoints";
+@import "variables";
+
 nav {
-    height: 63vh;
-    background-color: transparent;
-    border: none;
-    @include breakpoint(lg) {
-        transition: all 0.5s ease;
-        height: auto;
-        background-color: white;
-        border-bottom: 1px solid #f8f8f8;
-        top: 0;
-        transition: top 0.2s ease-in-out;
+    @include r(320) {
+        z-index: 10;
+        height: 60vh;
+        background-color: transparent;
+        border: none;
+        @include r(480) {
+            height: 100px;
+            background-color: white;
+            border-bottom: 1px solid #f8f8f8;
+            top: 0;
+            transition: top 0.2s ease-in-out;
+        }
+        @include r(600) {
+            height: 100px;
+            background-color: white;
+            border-bottom: 1px solid #f8f8f8;
+            top: 0;
+            transition: top 0.2s ease-in-out;
+        }
+        @include r(768) {
+            height: 100px;
+            background-color: white;
+            border-bottom: 1px solid #f8f8f8;
+            top: 0;
+            transition: top 0.2s ease-in-out;
+        }
     }
     a {
         color: $gray;
         font-size: 18px;
         margin-bottom: 7px;
         font-family: "Inter Light", sans-serif;
-        @include breakpoint(lg) {
+        @include r(768) {
             font-size: 22px;
         }
     }
@@ -26,4 +45,10 @@ nav {
 
 .nav-up {
     top: -100px; // same as header height. use variables in LESS/SASS
+}
+
+.main-content {
+    @include r(768) {
+        flex-wrap: wrap;
+    }
 }
