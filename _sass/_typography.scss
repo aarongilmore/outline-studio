@@ -49,7 +49,7 @@ p {
 
 .-indent p {
     margin-left: 0em;
-    @include r(320) {
+    @include r(480) {
         margin-left: 2em;
     }
 }
