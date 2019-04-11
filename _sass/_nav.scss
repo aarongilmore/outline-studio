@@ -9,22 +9,16 @@ nav {
         border: none;
         @include r(480) {
             height: 100px;
-            background-color: white;
-            border-bottom: 1px solid #f8f8f8;
             top: 0;
             transition: top 0.2s ease-in-out;
         }
         @include r(600) {
             height: 100px;
-            background-color: white;
-            border-bottom: 1px solid #f8f8f8;
             top: 0;
             transition: top 0.2s ease-in-out;
         }
         @include r(768) {
             height: 100px;
-            background-color: white;
-            border-bottom: 1px solid #f8f8f8;
             top: 0;
             transition: top 0.2s ease-in-out;
         }
@@ -45,10 +39,4 @@ nav {
 
 .nav-up {
     top: -100px; // same as header height. use variables in LESS/SASS
-}
-
-.main-content {
-    @include r(768) {
-        flex-wrap: wrap;
-    }
 }

@@ -16,64 +16,25 @@
           <h1>Outline Studio</h1>
         </c>
         <c span=4 class="w-50-ns w-100-m -indent">
-            {{ content }}
-                  <!-- <form id="form_id">
-                    <div class="flex flex-row-ns flex-column-m">
-                      <div class="mr2">
-                        <label for="full-name" class="f6 b db mb2">Full Name</label>
-                        <input name="full-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" placeholder="Full Name" required/>
-                      </div>
-                      <div>
-                        <label for="company-name" class="f6 b db mb2">Company Name</label>
-                        <input name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
-                      </div>
-                      </div>
-                        
-                        
-                        
-                        
-                        <div class="dib">
-                            <label for="name" class="f6 b db mb2">Name</label>
-                            <input name="name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
-  
-                            <label for="email" class="f6 b db mb2">Email address</label>
-                            <input name="email" type="email" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" required/>
-  
-                            
-                            <input type="submit" id="submit" class="db link"/>
-                        </div>
-                      </form> -->
-
-                      <form action="" class="form mw6" id="form_id">
-                        <div class="flex flex-wrap-ns flex-row-ns flex-column-m">
-                          <div class="form-group pr3-ns w-50-ns w-100-m mb3 relative">
-                            <label for="full-name" class="b form-label">Full Name</label>
-                            <input name="full-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required /> 
-                          </div>
-
-                          <div class="form-group w-50-ns w-100-m mb3 relative">  
-                            <label for="company-name" class="b form-label">Company Name</label>
-                            <input name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required />
-                          </div>
-
-                          <div class="form-group pr3-ns w-100-ns mb3 relative">
-                              <label for="full-name" class="b form-label">Email Address</label>
-                              <input name="full-name" type="text" class="db border-box hover-black w-100 ba b--black-20 pa2 mb2 form-input" required /> 
-                            </div>
-  
-                          <div class="form-group pr3-ns w-100-ns mb3 relative">
-                            <label for="company-name" class="b form-label-textarea">Tell us more about your project</label>
-                            <textarea name="company-name" type="text" class="db border-box hover-black w-100 measure ba b--black-20 pa2 mb2 form-input" required /></textarea>
-                          </div>
-                        </div>
-
-                        
-                      </form>
+          {{ content }}
+          <form class="contact__form" id="contact_form">
+            <div class="contact__form-group form-group relative h3">
+              <input type="text" class="form-input contact__input" id="full-name" name="full-name" required="">
+              <label for="full-name" class="contact__label">Full Name</label>    
+            </div>
+            <div class="contact__form-group form-group relative h3">
+              <input type="text" class="form-input contact__input" id="company-name" name="company-name" required="">
+              <label for="company-name" class="contact__label">Company Name</label>    
+            </div>
+            <div class="contact__form-group form-group relative h3">
+              <input type="email" class="form-input contact__input" id="email" name="email" required="">
+              <label for="email" class="contact__label">Email Address</label>    
+            </div>
+            <input type="submit" name="submit" class="contact__btn" value="Send" id="">
+          </form>
         </c>
       </grid>
-      {% include footer.html %}
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      {% include footer.html %}     
       <script src="https://static.formx.stream/tracker/v1/bundle.js"></script> 
-      <script rel="javascript" src="/assets/js/main.js"></script>     
   </body>
 </html>
