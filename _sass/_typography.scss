@@ -54,17 +54,17 @@ p {
     }
 }
 
-section h1 {
-    overflow: hidden;
-}
+// section h1 {
+//     overflow: hidden;
+// }
 
-section h1:after {
-    content:"";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 30px;
-    border-top: 1px solid #feede7;
-}
+// section h1:after {
+//     content:"";
+//     display: inline-block;
+//     height: 0.5em;
+//     vertical-align: bottom;
+//     width: 100%;
+//     margin-right: -100%;
+//     margin-left: 30px;
+//     border-top: 1px solid #feede7;
+// }
