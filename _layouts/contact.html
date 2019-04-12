@@ -8,15 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="/assets/css/style.css">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
   <body>
       {% include header.html %}
-      <section class="mw9 center ph3 ph4-m ph5-ns ma0 mt6-m pb5">
+      <section class="mw9 center ph3 ph4-m ma0 mt6-m pb5">
         <grid columns=8 columns-s=1 class="center mt5-ns">
-          <c span=8 span-s=8>
+          <c span=8 span-s=8 class="animated fadeInUp">
             <h1 class="mb1">Outline Studio &mdash;</h1>
           </c>
-          <c span=5-8 span-s=1 class="-indent mv5-ns mv3-m">
+          <c span=5-8 span-s=1 class="-indent mv5-ns mv3-m animated fadeInUp delay-0.2s">
             {{ content }}
             <form class="contact__form" id="contact_form">
               <div class="contact__form-group form-group relative h3 mv3-ns">
