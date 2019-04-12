@@ -11,30 +11,53 @@
   </head>
   <body>
       {% include header.html %}
-      <grid columns=8 columns-s=1 class="vh-100-ns flex flex-row-ns flex-column-m flex-column items-center ph6-ns ph3-m ph3">
-        <c span=4 class="w-50-ns w-100-m">
-          <h1>Outline Studio</h1>
-        </c>
-        <c span=4 class="w-50-ns w-100-m -indent">
-          {{ content }}
-          <form class="contact__form" id="contact_form">
-            <div class="contact__form-group form-group relative h3">
-              <input type="text" class="form-input contact__input" id="full-name" name="full-name" required="">
-              <label for="full-name" class="contact__label">Full Name</label>    
-            </div>
-            <div class="contact__form-group form-group relative h3">
-              <input type="text" class="form-input contact__input" id="company-name" name="company-name" required="">
-              <label for="company-name" class="contact__label">Company Name</label>    
-            </div>
-            <div class="contact__form-group form-group relative h3">
-              <input type="email" class="form-input contact__input" id="email" name="email" required="">
-              <label for="email" class="contact__label">Email Address</label>    
-            </div>
-            <input type="submit" name="submit" class="contact__btn" value="Send" id="">
-          </form>
-        </c>
-      </grid>
-      {% include footer.html %}     
+      <section class="mw9 center ph3 ph4-m ph5-ns ma0 mt6-m pb5 background">
+        <grid columns=8 columns-s=1 class="ph3 ph4-m center mt5-ns">
+          <c span=8 span-s=8>
+            <h1 class="mb1">Outline Studio &mdash;</h1>
+          </c>
+          <c span=5-8 span-s=1 class="-indent mv5-ns mv3-m">
+            <form class="contact__form" id="contact_form">
+              <div class="contact__form-group form-group relative h3 mv3-ns">
+                <input type="text" class="form-input contact__input" id="full-name" name="full-name" required="">
+                <label for="full-name" class="contact__label">Full Name</label>    
+              </div>
+              <div class="contact__form-group form-group relative h3 mv3-ns">
+                <input type="text" class="form-input contact__input" id="company-name" name="company-name" required="">
+                <label for="company-name" class="contact__label">Company Name</label>    
+              </div>
+              <div class="contact__form-group form-group relative h3 mv3-ns">
+                <input type="email" class="form-input contact__input" id="email" name="email" required="">
+                <label for="email" class="contact__label">Email Address</label>    
+              </div>
+              <div class="contact__form-group form-group relative h3 mv3-ns">
+                <input type="text" class="form-input contact__input" id="your-project" name="your-project" required="">
+                <label for="your-project" class="contact__label">Tell us more about your project</label>    
+              </div>
+              <div class="contact__form-group form-group relative mv3-ns flex flex-row-ns flex-column-m flex-column">
+                <select class="contact__select w-50-ns w-100-m w-100 mr4 h3">
+                  <option value="" disabled selected>What's your budget?</option>
+                  <option value="5000">€5,000</option>
+                  <option value="5000">€5,000</option>
+                  <option value="5000">€5,000</option>
+                  <option value="5000">€5,000</option>
+                  <option value="5000">€5,000</option>
+                </select> 
+                <select class="contact__select w-50-ns w-100-m w-100 h3">
+                    <option value="" disabled selected>What's your timeline?</option>
+                    <option value="1-3 months">1-3 months</option>
+                    <option value="5000">€5,000</option>
+                    <option value="5000">€5,000</option>
+                    <option value="5000">€5,000</option>
+                    <option value="5000">€5,000</option>
+                  </select> 
+              </div>
+              <input type="submit" name="submit" class="contact__btn" value="Send" id="">
+            </form>
+          </c>
+        </grid>
+      </section>
+      {% include footer.html %}
       <script src="https://static.formx.stream/tracker/v1/bundle.js"></script> 
   </body>
 </html>
