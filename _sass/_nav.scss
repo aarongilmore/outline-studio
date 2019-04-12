@@ -4,7 +4,7 @@
 nav {
     @include r(320) {
         z-index: 10;
-        height: 60vh;
+        height: 30vh;
         background-color: transparent;
         border: none;
         @include r(480) {
