@@ -41,3 +41,14 @@ a:hover {
 a:active {
     color: $dark-pink;
 }
+
+section.bordered {
+    @include r(320) {
+        border: none;
+    }
+    @include r(600) {
+        border: 5px solid #000000;
+        margin: 20px;
+        border-bottom: 0;
+    }
+}
