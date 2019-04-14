@@ -73,3 +73,22 @@ select:focus {
 select option {
 	font-weight:normal;
 }
+
+button {
+  -moz-appearance: none;
+	-webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #f2c1c3;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
