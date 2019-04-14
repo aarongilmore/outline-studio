@@ -38,23 +38,3 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-
-// Form integration
-var formx = FormX.set()
-formx.trackProject('Outline Studio_74332b42-ccfc-4d3e-8803-779c72f59432')
-formx.trackForm('Outline Contact Form_fcb6eae8-2dee-4529-b6c5-70fa364363e4', 'contact_form')
-formx.start()
-
-
-  /* Material Inputs
-  -------------------------------------------------------*/
-  (function() {
-    var $optinInput = $('.contact__input');
-    $optinInput.on('blur', function() {
-      if ( $(this).val() ) {
-        $(this).parent('.contact__form-group').addClass('contact__form-group--active');
-      } else {
-        $(this).parent('.contact__form-group').removeClass('contact__form-group--active');
-      }
-    });
-  })();

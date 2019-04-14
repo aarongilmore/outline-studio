@@ -19,43 +19,43 @@
           </c>
           <c span=5-8 span-s=1 class="-indent mv5-ns mv3-m animated fadeInUp delay-0.2s">
             {{ content }}
-            <form class="contact__form" id="contact_form">
-              <div class="contact__form-group form-group relative h3 mv3-ns">
-                <input type="text" class="form-input contact__input" id="full-name" name="full-name" required="">
-                <label for="full-name" class="contact__label">Full Name</label>    
+            <form id="contact_form">
+              <div class="mv3-ns">
+                <label for="full-name">Full Name <abbr title="required" class="required">*</abbr></label>    
+                <input type="text" id="full-name" name="full-name" required>
               </div>
-              <div class="contact__form-group form-group relative h3 mv3-ns">
-                <input type="text" class="form-input contact__input" id="company-project-name" name="company-project-name">
-                <label for="company-project-name" class="contact__label">Company or Project Name</label>    
+              <div class="mv3-ns">
+                <label for="company-project-name">Company or Project Name</label>    
+                <input type="text" id="company-project-name" name="company-project-name">
               </div>
-              <div class="contact__form-group form-group relative h3 mv3-ns">
-                <input type="email" class="form-input contact__input" id="email" name="email" required="">
-                <label for="email" class="contact__label">Email Address</label>    
+              <div class="mv3-ns">
+                <label for="email">Email Address <abbr title="required" class="required">*</abbr></label>
+                <input type="email" id="email" name="email" required>    
               </div>
-              <div class="contact__form-group form-group relative h3 mv3-ns">
-                <input type="text" class="form-input contact__input" id="your-project" name="your-project" required="">
-                <label for="your-project" class="contact__label">Tell us more about your project</label>    
+              <div class="mv3-ns">
+                <label for="your-project">Tell us more about your project <abbr title="required" class="required">*</abbr></label>
+                <textarea type="text" id="your-project" name="your-project" required></textarea>    
               </div>
-              <div class="contact__form-group form-group relative mv3-ns flex flex-row-ns flex-column-m flex-column">
-                <select class="contact__select w-50-ns w-100-m w-100 mr4 h3" name="budget" required>
+              <div class="flex flex-row-ns flex-column-m flex-column">
+                <select class="w-50-ns w-100-m w-100 mr4 h3" name="budget" required>
                   <option value="" disabled selected>What's your budget?</option>
                   <option value="10000">Less than €10,000</option>
                   <option value="10000-25000">€10,000&ndash;€25,000</option>
                   <option value="25000">More than €25,000</option>
                   <option value="tbd">To be determined</option>
                 </select> 
-                <select class="contact__select w-50-ns w-100-m w-100 h3" name="timeline">
+                <select class="w-50-ns w-100-m w-100 h3" name="timeline">
                   <option value="" disabled selected>What's your timeline?</option>
                   <option value="1-3">1&ndash;3 months</option>
                   <option value="3-6">3&ndash;6 months</option>
                   <option value="6-more">More than 6 months</option>
                 </select> 
               </div>
-              <div class="contact__form-group form-group relative h3 mv3-ns">
-                <input type="text" class="form-input contact__input" id="how-did-you-hear" name="how-did-you-hear">
-                <label for="how-did-you-hear" class="contact__label">How did you hear about us?</label>    
+              <div class="mv3-ns">
+                <label for="how-did-you-hear">How did you hear about us?</label>    
+                <input type="text" id="how-did-you-hear" name="how-did-you-hear">
               </div>
-              <button type="submit" name="submit" class="link black bg-animate hover-bg-light-blue" value="Send" id="submit">Send now</button>
+              <input type="submit" id="submit" />
             </form>
           </c>
         </grid>
@@ -67,6 +67,6 @@
       formx.trackProject('Outline Studio_74332b42-ccfc-4d3e-8803-779c72f59432')
       formx.trackForm('Outline Contact Form_fcb6eae8-2dee-4529-b6c5-70fa364363e4', 'contact_form')
       formx.start()
-      </script> 
+      </script>
   </body>
 </html>
