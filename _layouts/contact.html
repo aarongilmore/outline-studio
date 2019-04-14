@@ -20,22 +20,27 @@
           <c span=5-8 span-s=1 class="-indent mv5-ns mv3-m animated fadeInUp delay-0.2s">
             {{ content }}
             <form id="contact_form">
+
               <div class="mv3-ns">
                 <label for="full-name">Full Name <abbr title="required" class="required">*</abbr></label>    
                 <input type="text" id="full-name" name="full-name" required>
               </div>
+
               <div class="mv3-ns">
                 <label for="company-project-name">Company or Project Name</label>    
                 <input type="text" id="company-project-name" name="company-project-name">
               </div>
+
               <div class="mv3-ns">
                 <label for="email">Email Address <abbr title="required" class="required">*</abbr></label>
                 <input type="email" id="email" name="email" required>    
               </div>
+
               <div class="mv3-ns">
                 <label for="your-project">Tell us more about your project <abbr title="required" class="required">*</abbr></label>
-                <textarea type="text" id="your-project" name="your-project" required></textarea>    
+                <textarea id="your-project" name="your-project" required></textarea>    
               </div>
+
               <div class="flex flex-row-ns flex-column-m flex-column">
                 <select class="w-50-ns w-100-m w-100 mr4 h3" name="budget" required>
                   <option value="" disabled selected>What's your budget?</option>
@@ -51,22 +56,18 @@
                   <option value="6-more">More than 6 months</option>
                 </select> 
               </div>
+
               <div class="mv3-ns">
                 <label for="how-did-you-hear">How did you hear about us?</label>    
-                <input type="text" id="how-did-you-hear" name="how-did-you-hear" />
+                <input type="text" id="how-did-you-hear" name="how-did-you-hear">
               </div>
-              <input type="submit" name="submit" class="contact__btn" value="Send" id="">
+
+              <button type="submit" name="submit" class="link black bg-animate hover-bg-light-blue" value="Send" id="submit">Send now</button>
+
             </form>
           </c>
         </grid>
       </section>
       {% include footer.html %}
-      <script src="https://static.formx.stream/tracker/v1/bundle.js"></script>
-      <script>
-      var formx = FormX.set()
-      formx.trackProject('Outline Studio_74332b42-ccfc-4d3e-8803-779c72f59432')
-      formx.trackForm('Outline Contact Form_fcb6eae8-2dee-4529-b6c5-70fa364363e4', 'contact_form')
-      formx.start()
-      </script>
   </body>
 </html>
