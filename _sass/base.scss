@@ -26,12 +26,18 @@ body {
         background-size:550px;
         background-repeat: no-repeat;
     }
-    @include r(1280) {
+    @include r(768) {
         background-image: url("/assets/images/background.svg");
         background-position: 0% 0%;
         background-size:950px;
         background-repeat: no-repeat;
     }
+    // @include r(1280) {
+    //     background-image: url("/assets/images/background.svg");
+    //     background-position: 0% 0%;
+    //     background-size:950px;
+    //     background-repeat: no-repeat;
+    // }
 }
 
 a:hover {
