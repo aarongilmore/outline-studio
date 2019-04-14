@@ -38,12 +38,6 @@ label {
 
 
  select {
-  @include r(600) {
-    font-size: 22px;
-  }
-  @include r(320) {
-    font-size: 18px;
-  }
   color: #919191;
 	line-height: 1.3;
 	padding: 0.5em 2em 0.5em 0.7em;
