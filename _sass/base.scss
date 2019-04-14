@@ -18,20 +18,18 @@ body {
     background-image: url("/assets/images/background.svg");
     background-repeat: no-repeat;
     background-size: 54% 100%;
+    background-position-x: 0px;
+    background-position-y: 20px;
     @include r(320) {
-        background-size: 100% 100%;
-        background-position: -150px -210px;
+        background-image: none;
     }
     @include r(600) {
-        background-size: 65% 100%;
-        background-position: -150px -210px;
+        background-image: url("/assets/images/background.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-x: -600px;
+        background-position-y: 20px;
     }
-}
-
-.container {
-    max-width: 96em;
-    display: block;
-    margin: 0 auto;
 }
 
 a:hover {
