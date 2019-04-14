@@ -14,21 +14,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    height: 100%;
-    background-image: url("/assets/images/background.svg");
-    background-repeat: no-repeat;
-    background-size: 54% 100%;
-    background-position-x: 0px;
-    background-position-y: 20px;
     @include r(320) {
         background-image: none;
     }
-    @include r(600) {
+    @include r(1280) {
         background-image: url("/assets/images/background.svg");
+        background-position: 0% 0%;
+        background-size:900px;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position-x: -600px;
-        background-position-y: 20px;
     }
 }
 
