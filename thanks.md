@@ -1,5 +1,5 @@
 ---
-title: Outline Studio — Thanks, we'll be in touch soon.
+title: Outline Studio — Thanks
 layout: thanks
 ---
 
