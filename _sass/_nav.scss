@@ -32,11 +32,10 @@ nav {
             font-size: 22px;
         }
     }
+    span {
+        color: $gray;
+    }
     a:active {
         color: $dark-pink;
     }
-}
-
-.nav-up {
-    top: -100px; // same as header height. use variables in LESS/SASS
 }

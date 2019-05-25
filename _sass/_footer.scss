@@ -2,15 +2,72 @@
 
 footer {
     background-color: #feede7;
-    border-top: 1px solid #eee;
+    &.colophon {
+        color: #0a121c;
+        border-top: 1px solid #f3dfd8;
+    }
     &.bordered {
         @include r(320) {
             border: none;
         }
         @include r(600) {
-            border: 5px solid #fbccbc;
-            margin: 20px;
-            border-top: 0;
+            border-top: 3px solid #222;
         }
+    }
+}
+
+.outline-newsletter-form {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.newsletter-form form {
+    border: 3px solid $dark-gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    -o-align-items: stretch;
+    align-items: stretch;
+}
+
+.newsletter-form form input[type="email"] {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    border: 0;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: 0px;
+    padding: 20px 50px 20px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.22;
+    background-color: #ffffff;
+    color: #0a121c;
+    border-right: 2px solid #0a121c;
+    border-radius: 0;
+    outline: none;
+}
+
+.outline-newsletter-form form [type="submit"] {
+    padding: 0px 44px;
+    color: $dark-gray;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 0px;
+    &:hover {
+        background-color: $dark-gray;
+        color: #ffffff;
+        opacity: 50%;
     }
 }
