@@ -6,6 +6,7 @@ nav {
         border-bottom: 1px solid #eee;
         background-color: white;
         z-index: 10;
+        padding: 1.5em 0em;
         @include r(480) {
             height: 100px;
             top: 0;

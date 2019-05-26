@@ -5,6 +5,7 @@ footer {
     &.colophon {
         color: #0a121c;
         border-top: 1px solid #f3dfd8;
+        text-align: center;
     }
     &.bordered {
         @include r(320) {
