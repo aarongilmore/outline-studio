@@ -12,6 +12,7 @@
     -o-align-items: center;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
    }
    .cta>div {
     padding:19px 15px;
@@ -42,6 +43,7 @@
     color: $dark-gray;
     background: none;
     border: 3px solid $dark-gray;
+    cursor: pointer;
 }
 
 .outline-cta:hover,
