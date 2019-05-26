@@ -44,23 +44,3 @@ body {
 a:hover {
     color: $dark-gray;
 }
-
-// a:active {
-//     color: $dark-pink;
-// }
-
-.active {
-    color: black;
-    border-bottom: 2px solid black;
-}
-
-// section.bordered {
-//     @include r(320) {
-//         border: none;
-//     }
-//     @include r(600) {
-//         border: 3px solid #333333;
-//         margin: 20px;
-//         border-bottom: 0;
-//     }
-// }

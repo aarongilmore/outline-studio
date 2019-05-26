@@ -24,37 +24,51 @@ footer {
 }
 
 .newsletter-form form {
-    border: 3px solid $dark-gray;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: stretch;
-    -moz-align-items: stretch;
-    -ms-align-items: stretch;
-    -o-align-items: stretch;
-    align-items: stretch;
+    @include r(320) {
+        border: 3px solid $dark-gray;
+        flex-direction: column;
+    }
+    @include r(600) {
+        border: 3px solid $dark-gray;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        -webkit-align-items: stretch;
+        -moz-align-items: stretch;
+        -ms-align-items: stretch;
+        -o-align-items: stretch;
+        align-items: stretch;
+    }
 }
 
 .newsletter-form form input[type="email"] {
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    -o-flex: 1;
-    flex: 1;
-    border: 0;
-    border-right-color: currentcolor;
-    border-right-style: none;
-    border-right-width: 0px;
-    padding: 20px 50px 20px 20px;
-    font-size: 18px;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.22;
-    background-color: #ffffff;
-    color: #0a121c;
-    border-right: 2px solid #0a121c;
-    border-radius: 0;
-    outline: none;
+    @include r(320) {
+        width: 100%;
+        border-right: none;
+    }
+    @include r(600) {
+        width: 300px;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        -o-flex: 1;
+        flex: 1;
+        border: 0;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: 0px;
+        padding: 20px 50px 20px 20px;
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.22;
+        background-color: #ffffff;
+        color: #0a121c;
+        border-right: 2px solid #0a121c;
+        border-radius: 0;
+        outline: none;
+    }
 }
 
 .outline-newsletter-form form [type="submit"] {
@@ -63,11 +77,15 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
-    background: #ffffff;
+    background: $dark-gray;
+    color: #ffffff;
     border-radius: 0px;
+    border: 1px solid $dark-gray;
     &:hover {
-        background-color: $dark-gray;
-        color: #ffffff;
-        opacity: 50%;
+        background: lighten($dark-gray, 30%);
+    }
+    @include r(320) {
+        width: 100%;
+        display: block;
     }
 }

@@ -31,11 +31,11 @@ nav {
         @include r(768) {
             font-size: 22px;
         }
+        &.active {
+            text-decoration: underline;
+        }
     }
     span {
         color: $gray;
-    }
-    a:active {
-        color: $dark-pink;
     }
 }
