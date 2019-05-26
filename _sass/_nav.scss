@@ -3,15 +3,17 @@
 
 nav {
     @include r(320) {
+        border-bottom: 1px solid #eee;
+        background-color: white;
         z-index: 10;
-        background-color: transparent;
-        border: none;
         @include r(480) {
             height: 100px;
             top: 0;
             transition: top 0.2s ease-in-out;
         }
         @include r(600) {
+            border-bottom: none;
+            background-color: transparent;
             height: 100px;
             top: 0;
             transition: top 0.2s ease-in-out;
