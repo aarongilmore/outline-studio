@@ -9,6 +9,10 @@
 //Mixins
 @import "breakpoints";
 
+::selection {
+    background-color: #feede7;
+}
+
 body {
     padding: 0;
     font-family: "Inter Light", sans-serif;
