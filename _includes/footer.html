@@ -47,6 +47,14 @@
     </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script rel="javascript" src="/assets/js/main.js"></script> 
+<script>
+$(document).ready(function(){
+  $('#nav a').click(function(){
+        $('a').removeClass("active");
+        $(this).addClass("active");
+    });
+});
+</script>
 <script src="https://static.formx.stream/tracker/v1/bundle.js"></script>

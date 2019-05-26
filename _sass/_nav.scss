@@ -4,7 +4,6 @@
 nav {
     @include r(320) {
         z-index: 10;
-        // height: 20vh;
         background-color: transparent;
         border: none;
         @include r(480) {
@@ -29,11 +28,12 @@ nav {
         font-size: 1.1em;
         margin-bottom: 7px;
         font-family: "Inter Light", sans-serif;
+        text-decoration: none;
         @include r(768) {
             font-size: 1.1em;
         }
-        &.active {
-            text-decoration: underline;
-        }
     }
 }
+ 
+ 
+
