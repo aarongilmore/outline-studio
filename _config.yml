@@ -2,11 +2,17 @@
 title: Outline Studio
 timezone: UTC
 collections:
+  notes:
+    title: Notes
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
+    output: true
+  work:
+    title: Work
     output: true
 defaults:
 - scope:
