@@ -5,6 +5,8 @@
 @import "variables";
 @import "form";
 @import "buttons";
+@import "hero";
+@import "post-images";
 
 //Mixins
 @import "breakpoints";
@@ -19,24 +21,6 @@ body {
     // -moz-osx-font-smoothing: grayscale;
     // text-rendering: optimizeLegibility;
     line-height: 1.5;
-    @include r(320) {
-        background-image: url("/assets/images/background.svg");
-        background-position: 170% 0%;
-        background-size:750px;
-        background-repeat: no-repeat;
-    }
-    @include r(600) {
-        background-image: url("/assets/images/background.svg");
-        background-position: 0% 0%;
-        background-size:550px;
-        background-repeat: no-repeat;
-    }
-    @include r(768) {
-        background-image: url("/assets/images/background.svg");
-        background-position: 0% 0%;
-        background-size:950px;
-        background-repeat: no-repeat;
-    }
 }
 
 a:hover {
