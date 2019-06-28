@@ -1,8 +1,7 @@
 ---
 title: Hello World
 date: 2019-06-11 00:00:00 +02:00
-categories:
-- tone of voice
+categories: tone of voice
 layout: note
 cover_img: "/assets/posts/2019-06-11/cover.jpg"
 author: alyse_topel
