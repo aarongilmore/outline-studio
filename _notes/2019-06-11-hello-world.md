@@ -1,5 +1,5 @@
 ---
-title: 2019 06 11 Hello World
+title: Hello World
 categories:
 - tone of voice
 ---
