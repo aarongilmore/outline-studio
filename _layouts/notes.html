@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">        
+  </head>
+  <body>
+      {% include header.html %}
+      <section class="pl6 pt6-ns bg-stone bg-notes">
+          <grid columns=5 columns-s=1 class="mt2-ns bg-white">
+            <c span=5 span-s=5 class="ph5 pv5">
+                <h1 class="f-headline mv3">Notes</h1>
+                {% for note in site.notes limit:5 %}
+                    <div class="">
+                        <img src="{{ note.img }}">
+                        <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
+                        {{ note.excerpt }}
+                        <!-- Look the author details up from the site config. -->
+                        {% assign author = site.data.authors[note.author] %}
+                        <!-- Output author details if some exist. -->
+                        {% if author %}
+                            <span>
+                                <!-- Personal Info. -->
+                                Posted by <a href="{{ author.web }}">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                            </span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </c>
+          </grid>
+      </section>
+      <!-- <div class="post-nav">
+          <div>
+            {% if page.previous.url %}
+            <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+            {% endif %}
+          </div>
+          <div class="post-nav-next">
+            {% if page.next.url %}
+            <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+            {% endif %}
+          </div>
+        </div> -->
+      {% include footer.html %}
+
+  </body>
+</html>

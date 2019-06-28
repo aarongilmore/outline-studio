@@ -50,8 +50,8 @@
   </head>
   <body>
       {% include header.html %}
-      <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 hero vh-100 flex items-end">
-        <h1 class="f-headline lh-solid white mw8  dib v-btm">We help our partners speak clearly and consistently. <strong>Together, we'll find your voice.</strong></h1>
+      <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 hero vh-100-ns vh-75 flex items-end">
+        <h1 class="f-headline-ns f2 lh-solid-ns lh-title white mw8  dib v-btm">We help our partners speak clearly and consistently. <strong>Together, we'll find your voice.</strong></h1>
       </section>
 
       <section class="ph3 ph4-m ph5-ns">
@@ -63,7 +63,7 @@
               <div class="flex flex-wrap">
                 {% for note in site.notes limit:5 %}
                   <div class="w-50 pa4">
-                    <img src="{{ note.img }}">
+                    <img src="{{ note.cover_img }}">
                     <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
                     {{ note.excerpt }}
                     <!-- Look the author details up from the site config. -->
