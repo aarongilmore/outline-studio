@@ -36,6 +36,7 @@ p {
     h1 {
         @include r(320) {
             margin-top: -2.2em;
+            margin-bottom: 1.5em;
         }
         @include r(600) {
             margin-top: 1em;
