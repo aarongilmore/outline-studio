@@ -1,8 +1,7 @@
 ---
 title: Madam George
 date: 2019-06-22 00:00:00 +02:00
-categories:
-- essay
+category: essay
 layout: note
 cover_img: "/assets/posts/2019-06-22/cover.jpg"
 author: alyse_topel
