@@ -1,12 +1,12 @@
 ---
-title: Hello World
+title: Hello Mate
 date: 2019-06-11 00:00:00 +02:00
 categories:
 - tone of voice
-layout: note
 author: alyse_topel
 excerpt_separator: "<!--more-->"
 img: "/assets/posts/2019-06-11/cover.jpg"
+layout: note
 ---
 
 I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors. 
