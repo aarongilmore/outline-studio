@@ -27,7 +27,8 @@ nav {
     }
     a {
         color: $dark-gray;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        vertical-align: middle;
         font-size: 1.1em;
         margin-bottom: 7px;
         font-family: "Inter Light", sans-serif;

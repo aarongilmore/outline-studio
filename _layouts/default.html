@@ -50,17 +50,37 @@
   </head>
   <body>
       {% include header.html %}
-      <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 bordered">
-        <grid columns=5 columns-s=1 class="mw9 center mt2-ns">
+      <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 hero vh-100 flex items-end">
+        <h1 class="f-headline lh-solid white mw8  dib v-btm">We help our partners speak clearly and consistently. <strong>Together, we'll find your voice.</strong></h1>
+      </section>
+
+      <section class="ph3 ph4-m ph5-ns">
+      <grid columns=5 columns-s=1 class="mw9 center mt2-ns">
           <c span=5 span-s=5>
-              <a href="/" class="link black"><h1 class="ma0">Outline Studio &mdash;</h1></a>
+              <h2 class="f4">Recent notes</h2>
           </c>
           <c span=3-5 span-s=1 class="mv5-ns mv3-m">
-            {{ content }}
-            <p>Interested in working with us? <a href="/contact" class="link black underline dim b">Get in touch</a> to discuss your next project.</p>
+              <div class="flex flex-wrap">
+                {% for note in site.notes limit:5 %}
+                  <div class="w-50 pa4">
+                    <img src="{{ note.img }}">
+                    <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
+                    {{ note.excerpt }}
+                    <!-- Look the author details up from the site config. -->
+                    {% assign author = site.data.authors[note.author] %}
+                    <!-- Output author details if some exist. -->
+                    {% if author %}
+                      <span>
+                          <!-- Personal Info. -->
+                          Posted by <a href="{{ author.web }}">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                      </span>
+                    {% endif %}
+                  </div>
+                {% endfor %}
+              </div>
           </c>
-        </grid>
-      </section>
+      </grid>
+    </section>
       {% include footer.html %}
   </body>
 </html>
