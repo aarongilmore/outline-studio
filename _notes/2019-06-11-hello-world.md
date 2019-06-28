@@ -1,7 +1,7 @@
 ---
-layout: note
-title: Hello World
-category: tone of voice
+title: Hello Mate
+date: 2019-06-11 00:00:00 +02:00
+categories: tone of voice
 author: alyse_topel
 excerpt_separator: <!--more-->
 cover_img: /assets/posts/2019-06-11/cover.jpg
