@@ -8,7 +8,7 @@ author: alyse_topel
 excerpt_separator: "<!--more-->"
 ---
 
-I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors. Test.
+I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors.
 
 <!--more-->
 
