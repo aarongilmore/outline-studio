@@ -8,7 +8,7 @@ date: 2019-06-11 00:00:00 +02:00
 excerpt_separator: <!--more-->
 ---
 
-I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors. 
+I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors. Test.
 
 <!--more-->
 
