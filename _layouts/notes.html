@@ -11,12 +11,12 @@
   </head>
   <body>
       {% include header.html %}
-      <section class="pl5-ns pt6-ns bg-stone bg-notes">
-          <grid columns=5 columns-s=1 class="mt2-ns bg-white">
-            <c span=2-5 span-s=5 class="ph4-ns ph3 pv5">
-                <h1 class="f-headline mv3">Notes</h1>
+      <section class="ph5-ns pt6 bg-stone bg-notes">
+          <grid columns=5 columns-s=1 class="mt2-ns ph3 ph0-ns bg-white">
+            <c span=2-4 span-s=5 class="pv5-ns pv2">
+                <h1 class="f1 mv3">Notes</h1>
                 {% for note in site.notes limit:5 %}
-                    <div class="">
+                    <div class="bb b--light-gray">
                         <img src="{{ note.img }}">
                         <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
                         {{ note.excerpt }}
@@ -24,9 +24,9 @@
                         {% assign author = site.data.authors[note.author] %}
                         <!-- Output author details if some exist. -->
                         {% if author %}
-                            <span>
+                            <span class="db mb4">
                                 <!-- Personal Info. -->
-                                Posted by <a href="{{ author.web }}">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                                Posted by <a href="{{ author.web }}" class="link dim dark-gray">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
                             </span>
                         {% endif %}
                     </div>
