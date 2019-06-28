@@ -12,17 +12,17 @@
   <body>
       {% include header.html %}
       <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 bordered">
-          <grid columns=5 columns-s=1 class="mw9 center mt2-ns">
+          <grid columns=5 columns-s=1 class="mw9 center mt4">
             <c span=2-5 span-s=5 class="ph0 ph4-ns">
-                <span class="dib ttu gray">{{ page.category }}</span>
+                <span class="dib ttu gray">{{ page.categories }}</span>
                 <h3 class="f2 mv2">{{ page.title }}</h3>
                 <!-- Look the author details up from the site config. -->
                 {% assign author = site.data.authors[page.author] %}
                 <!-- Output author details if some exist. -->
                 {% if author %}
-                  <span>
+                  <span class="dib mb3">
                       <!-- Personal Info. -->
-                      Posted by <a href="{{ author.web }}">{{ author.name }}</a> on {{ page.date | date: '%B %d, %Y' }}
+                      Posted by <a href="{{ author.web }}" class="link dim dark-gray">{{ author.name }}</a> on {{ page.date | date: '%B %d, %Y' }}
                   </span>
                 {% endif %}
                 {{ content }}
