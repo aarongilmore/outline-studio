@@ -60,9 +60,9 @@
               <h2 class="f4">Recent notes</h2>
           </c>
           <c span=3-5 span-s=1 class="mv5-ns mv3-m">
-              <div class="flex flex-wrap">
+              <div class="flex flex-row-ns flex-column flex-wrap-ns">
                 {% for note in site.notes limit:5 %}
-                  <div class="w-50 pa4">
+                  <div class="w-100 w-50-ns pa0 pa4-ns mb4">
                     <img src="{{ note.cover_img }}">
                     <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
                     {{ note.excerpt }}
@@ -70,9 +70,9 @@
                     {% assign author = site.data.authors[note.author] %}
                     <!-- Output author details if some exist. -->
                     {% if author %}
-                      <span>
+                      <span class="gray">
                           <!-- Personal Info. -->
-                          Posted by <a href="{{ author.web }}">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                          Posted by <a href="{{ author.web }}" class="link dim dark-gray">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
                       </span>
                     {% endif %}
                   </div>
