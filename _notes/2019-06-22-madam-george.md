@@ -1,10 +1,12 @@
 ---
-layout: note
 title: Madam George
-category: essay
+date: 2019-06-22 00:00:00 +02:00
+categories:
+- essay
+layout: note
 author: alyse_topel
-excerpt_separator: <!--more-->
-img: /assets/posts/2019-06-22/cover.jpg
+excerpt_separator: "<!--more-->"
+img: "/assets/posts/2019-06-22/cover.jpg"
 ---
 
 I was in high school in the tenth grade! One of my friends was thinking about applying to art and design school, and had a student prospective book featuring all the classes and majors. 
