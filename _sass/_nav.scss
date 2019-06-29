@@ -33,8 +33,14 @@ nav {
         margin-bottom: 7px;
         font-family: "Inter Light", sans-serif;
         text-decoration: none;
+        border-bottom: 2px solid transparent;
         @include r(768) {
             font-size: 1.1em;
+        }
+        &.active {
+            font-weight: 900;
+            color: black;
+            letter-spacing: -1px;
         }
     }
 }

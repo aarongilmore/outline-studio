@@ -1,11 +1,11 @@
 <footer class="ph3 ph4-m ph5-ns pv5 bordered main">
     <div class="mw9 center">
-    <grid columns=6 columns-s=1>
-        <c span=2 span-s=row class="mb4">
+    <grid columns=8 columns-s=1>
+        <c span=1-2 span-s=row class="mb4">
             <h3 class="f2 mb1 mt0-ns mt3">Outline Studio</h3>
             <p>Together, we’ll find your voice.</p>
         </c>
-        <c span=2 span-s=row class="mb4">
+        <c span=3-4 span-s=row class="mb4">
             <h3 class="f2 mb1 mt0-ns mt3">Say Hello</h3>
             <p>
                 <a href="mailto:hello@outline.studio" class="link black underline dim">hello@outline.studio</a> <br>
@@ -14,7 +14,7 @@
                 <a href="https://www.instagram.com/outlineAMS/" target="_blank" class="link black underline dim">Instagram &#x2197;</a>
             </p>
         </c>
-        <c span=2 span-s=row>
+        <c span=5-8 span-s=row>
             <h3 class="f2 mb1 mt0-ns mt3">Newsletter</h3>
             <p class="mw6">For the rare update or project announcement, subscribe to our occasional newsletter.</p>
             <div class="newsletter-form outline-newsletter-form">
@@ -49,11 +49,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script rel="javascript" src="/assets/js/main.js"></script> 
-<script>
-$(document).ready(function(){
-  $('#nav a').click(function(){
-        $('a').removeClass("active");
-        $(this).addClass("active");
-    });
+<script type="text/javascript">
+$(function(){
+    var url = window.location.pathname, 
+    urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+        // now grab every link from the navigation
+        $('nav a').each(function(){
+            // and test its normalized href against the url pathname regexp
+            if(urlRegExp.test(this.href.replace(/\/$/,''))){
+                $(this).addClass('active');
+            }
+        });
 });
-</script>
+  </script>

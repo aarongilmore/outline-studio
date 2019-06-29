@@ -1,5 +1,5 @@
 ---
-title: Outline Studio — Notes
+title: Notes
 layout: notes
 ---
 

@@ -12,8 +12,8 @@
   <body>
       {% include header.html %}
       <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5">
-          <grid columns=5 columns-s=1 class="mw9 mt4">
-            <c span=2-5 span-s=5>
+          <grid columns=8 columns-s=1 class="mw9 mt4">
+            <c span=3-6 span-s=5>
                 <span class="dib ttu gray">{{ page.categories }}</span>
                 <h1 class="f1 mv2">{{ page.title }}</h1>
                 <!-- Look the author details up from the site config. -->
@@ -29,7 +29,7 @@
             </c>
           </grid>
       </section>
-      <!-- <div class="post-nav">
+      <div class="post-nav">
           <div>
             {% if page.previous.url %}
             <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
@@ -40,7 +40,7 @@
             <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
             {% endif %}
           </div>
-        </div> -->
+        </div>
       {% include footer.html %}
 
   </body>
