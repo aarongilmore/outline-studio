@@ -1,7 +1,6 @@
 .hero {
-    height: 100vh;
     @include r(320) {
-        // height: calc(100vh - 110px);
+        height: 80vh;
         background-color: $pink;
         background-image: url("/assets/images/background.svg");
         background-position: 0% 30%;
@@ -9,7 +8,7 @@
         background-repeat: no-repeat;
     }
     @include r(600) {
-        // height: calc(100vh - 100px);
+        height: 100vh;
         background-color: $pink;
         background-image: url("/assets/images/background.svg");
         background-position: 0% -200%;
