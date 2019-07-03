@@ -51,20 +51,20 @@
   <body>
       {% include header.html %}
       <section class="ph3 ph4-m ph5-ns pt4-ns pb6-ns pv3 ma0 mt6-m pb5 hero vh-100-ns vh-75 flex items-end">
-        <h1 class="f-headline-ns f2 lh-solid-ns lh-title white mw8 dib v-btm pb4"><span style="font-weight:300;">We help our partners speak clearly and consistently.</span> Together, we'll find your voice.</h1>
+        <h1 class="f-headline-ns f2 lh-solid-ns lh-title mw8 dib v-btm pb4"><span style="font-weight:300;">We help our partners speak clearly and consistently. Together, we'll find your voice.</h1>
       </section>
 
-      <section class="ph3 ph4-m ph5-ns">
+      <section class="ph3 ph4-m ph5-ns pv4">
       <grid columns=8 columns-s=1 class="mw9 center mt2-ns">
-          <c span=1.. span-s=1..>
-              <h1 class="f1 mv3-ns">Recent Notes</h1>
+          <c span=3 span-s=1>
+            <h3 class="f2 mv5-ns mv3-m">Recent Notes</h3>
           </c>
-          <c span=3-7 span-s=1 class="mv5-ns mv3-m">
+          <c span=5 span-s=1 class="mv5-ns mv3-m">
               <div class="flex flex-row-ns flex-column flex-wrap-ns">
-                {% for note in site.notes limit:5 %}
+                {% for note in site.notes limit:2 %}
                   <div class="w-100 w-50-ns pa0 pr5-ns mb4">
                     <img src="{{ note.cover_img }}">
-                    <a href="{{ note.url }}" class="link dim dark-gray"><h3 class="f2 mv2">{{ note.title }}</h3></a>
+                    <a href="{{ note.url }}" class="link black dim"><h3 class="f2 mb0">{{ note.title }}</h3></a>
                     {{ note.excerpt }}
                     <!-- Look the author details up from the site config. -->
                     {% assign author = site.data.authors[note.author] %}

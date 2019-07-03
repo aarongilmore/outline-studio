@@ -1,7 +1,7 @@
 @import 'variables';
 
 footer {
-    background-color: #feede7;
+    // background-color: #feede7;
     &.colophon {
         @include r(320) {
             text-align: center;
@@ -10,7 +10,7 @@ footer {
             text-align: left;
         }
         color: #0a121c;
-        border-top: 1px solid #f3dfd8;
+        // border-top: 1px solid #f3dfd8;
     }
     &.bordered {
         @include r(320) {
@@ -54,7 +54,7 @@ footer {
         border-right: none;
     }
     @include r(600) {
-        width: 300px;
+        width: 100%;
         -webkit-flex: 1;
         -moz-flex: 1;
         -ms-flex: 1;
@@ -64,8 +64,8 @@ footer {
         border-right-color: currentcolor;
         border-right-style: none;
         border-right-width: 0px;
-        padding: 20px 50px 20px 20px;
-        font-size: 18px;
+        padding: 20px 0px 20px 20px;
+        font-size: 16px;
         font-weight: 300;
         font-style: italic;
         line-height: 1.22;
@@ -78,10 +78,11 @@ footer {
 }
 
 .outline-newsletter-form form [type="submit"] {
-    padding: 0px 44px;
+    width: 35%;
+    padding: 0px 5px;
     color: $dark-gray;
     font-weight: 700;
-    text-transform: uppercase;
+    font-size: 16px;
     cursor: pointer;
     background: $dark-gray;
     color: #ffffff;
@@ -91,7 +92,7 @@ footer {
         background: lighten($dark-gray, 30%);
     }
     @include r(320) {
-        width: 100%;
+        // width: 100%;
         display: block;
     }
 }

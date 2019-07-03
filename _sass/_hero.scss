@@ -1,15 +1,15 @@
 .hero {
     @include r(320) {
-        background-color: $bottle-green;
-        background-image: url("/assets/images/home-background.svg");
+        background-color: $pink;
+        background-image: url("/assets/images/background.svg");
         background-position: 0% 30%;
         background-size:750px;
         background-repeat: no-repeat;
     }
     @include r(600) {
-        background-color: $bottle-green;
-        background-image: url("/assets/images/home-background.svg");
-        background-position: 0% 300%;
+        background-color: $pink;
+        background-image: url("/assets/images/background.svg");
+        background-position: 0% -200%;
         background-size:750px;
         background-repeat: no-repeat;   
     }
@@ -17,15 +17,15 @@
 
 .bg-notes {
     @include r(320) {
-        background-color: $stone;
-        background-image: url("/assets/images/notes-background.svg");
+        background-color: $pink;
+        background-image: url("/assets/images/background.svg");
         background-position: -30% -250%;
         background-size:750px;
         background-repeat: no-repeat;
     }
     @include r(600) {
-        background-color: $stone;
-        background-image: url("/assets/images/notes-background.svg");
+        background-color: $pink;
+        background-image: url("/assets/images/background.svg");
         background-position: 0% -100%;
         background-size:750px;
         background-repeat: no-repeat;   
