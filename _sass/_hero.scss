@@ -22,6 +22,9 @@
         strong {
             font-family: "Ivar Bold", serif;
         }
+        @include r(320) {
+            font-size: 2.5rem;
+        }
     }
 }
 .hero-slim {
