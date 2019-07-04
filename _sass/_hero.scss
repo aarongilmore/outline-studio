@@ -1,6 +1,6 @@
 .hero {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 100 - 100px);
     @include r(320) {
         background-color: $pink;
         background-image: url("/assets/images/background.svg");
@@ -26,14 +26,14 @@
 }
 .hero-slim {
     @include r(320) {
-        background-color: $pink;
+        background-color: $stone;
         background-image: url("/assets/images/background.svg");
         background-position: -10% 40%;
         background-size:500px;
         background-repeat: no-repeat;
     }
     @include r(600) {
-        background-color: $pink;
+        background-color: $stone;
         background-image: url("/assets/images/background.svg");
         background-position: 0% 20%;
         background-size:750px;
