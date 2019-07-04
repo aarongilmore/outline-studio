@@ -78,7 +78,8 @@ footer {
 }
 
 .outline-newsletter-form form [type="submit"] {
-    width: 35%;
+    @include r(320){width: 100%;}
+    @include r(600){width: 35%;}
     padding: 0px 5px;
     color: $dark-gray;
     font-weight: 700;
