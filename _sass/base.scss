@@ -1,13 +1,12 @@
 @import "fluid-type";
-@import "typography";
 @import "nav";
+@import "typography";
 @import "footer";
 @import "variables";
 @import "form";
 @import "buttons";
 @import "hero";
 @import "post-images";
-@import "notes";
 
 //Mixins
 @import "breakpoints";
@@ -18,11 +17,16 @@
 
 body {
     padding: 0;
-    padding-top: 100px; // for fixed nav bar
     font-family: "Inter Light", sans-serif;
     // -moz-osx-font-smoothing: grayscale;
     // text-rendering: optimizeLegibility;
     line-height: 1.5;
+    @include r(320) {
+        padding-top: 0px; // for fixed nav bar
+    }
+    @include r(600) {
+        padding-top: 100px; // for fixed nav bar
+    }
 }
 
 a:hover {
