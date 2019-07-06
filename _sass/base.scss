@@ -16,6 +16,7 @@
 }
 
 body {
+    background-color: #fdfcfb;
     padding: 0;
     font-family: "Inter Light", sans-serif;
     // -moz-osx-font-smoothing: grayscale;
@@ -27,8 +28,4 @@ body {
     @include r(600) {
         padding-top: 100px; // for fixed nav bar
     }
-}
-
-a:hover {
-    color: $dark-gray;
 }

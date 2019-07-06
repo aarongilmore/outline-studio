@@ -44,7 +44,7 @@ $(function() {
         const e = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
             t = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
             a = new Date,
-            n = t[a.getDay()] + " " + (a.getDate() < 10 ? "0" : "") + a.getDate() + " " + e[a.getMonth()] + " " + a.getFullYear();
+            n = t[a.getDay()] + ", " + (a.getDate() < 10 ? "0" : "") + a.getDate() + " " + e[a.getMonth()] + " " + a.getFullYear();
         $(".js-date-today").text(n)
     }
 });
