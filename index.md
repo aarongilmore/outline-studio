@@ -1,9 +1,7 @@
 ---
-title: Outline Studio — We help our partners speak clearly and consistently
+title: Outline Studio | We help our partners speak clearly and consistently
 layout: default
 ---
-
-## We help our partners speak clearly and consistently. Together, we'll find your voice.
 
 Through collaboration, we'll establish a brand voice that will grow with you from a single idea to dozens of employees, a prototype to a million dollar business.
 
