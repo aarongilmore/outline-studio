@@ -1,5 +1,5 @@
 ---
-title: Outline Studio — Contact
+title: Contact • outline.studio
 layout: contact
 ---
 
