@@ -1,14 +1,53 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="/assets/css/style.css">        
-  </head>
+      <meta charset="utf-8">
+      <title>{{ page.title }}</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="" />
+  
+      <meta property="fb:app_id" content="">
+      <meta property="og:url" content="http://outline.studio/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="{{ page.title }}" />
+      <meta property="og:image" content="/assets/images/outline-social.jpg" />
+      <meta property="og:description" content="" />
+      <meta property="og:site_name" content="{{ page.title }}" />
+      <meta property="og:locale" content="en_GB" />
+      <meta property="og:locale:alternate" content="en_GB" />
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="" />
+      <meta name="twitter:url" content="http://outline.studio/" />
+      <meta name="twitter:title" content="{{ page.title }}" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:image" content="/assets/images/outline-social.jpg" />
+  
+    
+      <link rel="home" href="http://outline.studio/" />
+      <link rel="canonical" href="http://outline.studio/">
+  
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#003c5f">
+      <meta name="theme-color" content="#ffffff">
+  
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140883580-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140883580-1');
+      </script>
+  
+      <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+      <link rel="stylesheet" href="/assets/css/style.css">        
+    </head>
   <body>
       {% include header.html %}
       <section>
