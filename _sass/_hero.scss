@@ -2,19 +2,9 @@
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     @include r(320) {
         height: calc(var(--vh, 1vh) * 75);
-        background-color: $pink;
-        background-image: url("/assets/images/background.svg");
-        background-position: 0% 30%;
-        background-size:750px;
-        background-repeat: no-repeat;
     }
     @include r(600) {
         height: calc(var(--vh, 1vh) * 100 - 100px);
-        background-color: $pink;
-        background-image: url("/assets/images/background.svg");
-        background-position: 0% 100%;
-        background-size:1200px;
-        background-repeat: no-repeat;   
     }
     h1 {
         line-height: 1.1em;
@@ -29,21 +19,31 @@
         @include r(600) {
             font-size: 6rem;
         }
+        span {
+            font-size: 1rem;
+        }
     }
 }
 .hero-slim {
     @include r(320) {
-        background-color: $pink;
-        background-image: url("/assets/images/background.svg");
+        background-color: $stone;
+        background-image: url("/assets/images/background-hero-slim.svg");
         background-position: -10% 40%;
         background-size:500px;
         background-repeat: no-repeat;
     }
     @include r(600) {
-        background-color: $pink;
-        background-image: url("/assets/images/background.svg");
-        background-position: 0% 20%;
-        background-size:750px;
+        background-color: $stone;
+        background-image: url("/assets/images/background-hero-slim.svg");
+        background-position: -5% 35%;
+        background-size:500px;
         background-repeat: no-repeat;   
     }
+}
+
+footer {
+    background-image: url("/assets/images/background-voice.svg");
+    background-position: 100% 0%;
+    background-size:500px;
+    background-repeat: no-repeat;
 }

@@ -48,16 +48,20 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="/assets/css/style.css">        
   </head>
-  <body>
+  <body class="home">
       {% include header.html %}
       <section class="ph3 ph4-m ph5-ns pb5-ns pv3 ma0 mt6-m hero flex items-end">
-        <h1 class="f-headline-ns f1 mw8 dib v-btm pb4"><span style="font-weight:300;">We help our partners speak clearly and consistently. <strong>Together, we'll find your voice.</strong></h1>
+        <h1 class="f-headline-ns f1 mw8 dib v-btm pb4">
+          <span class="relative db numbering">01</span>
+          We help our partners speak clearly and consistently.<strong>Together, we'll find your voice.</strong>
+        </h1>
       </section>
 
       <section class="ph3 ph4-m ph5-ns pv2">
         <grid columns=8 columns-s=1 class="mt2-ns">
             <c span=3 span-s=1>
-              <h3 class="f2 mv5-ns mv3-m mb0">About &mdash;</h3>
+              <span class="relative db numbering">02</span>
+              <h3 class="f2 mb0">About Us</h3>
             </c>
             <c span=5 span-s=1 class="mv5-ns mv3-m">
                 {{content}}
@@ -68,7 +72,8 @@
       <section class="ph3 ph4-m ph5-ns pv2">
       <grid columns=8 columns-s=1 class="mt2-ns">
           <c span=3 span-s=1>
-            <h3 class="f2 mv5-ns mv3-m">Recent Notes &mdash;</h3>
+            <span class="relative db numbering">03</span>
+            <h3 class="f2">Recent Notes</h3>
           </c>
           <c span=5 span-s=1 class="mv5-ns mv3-m">
               <div class="flex flex-row-ns flex-column flex-wrap-ns">
@@ -84,7 +89,7 @@
                     {% if author %}
                       <span class="gray">
                           <!-- Personal Info. -->
-                          Posted by <a href="{{ author.web }}" class="link dim dark-gray pb1 bb">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                          Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
                       </span>
                     {% endif %}
                     </a>

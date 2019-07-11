@@ -28,4 +28,10 @@ body {
     @include r(600) {
         padding-top: 100px; // for fixed nav bar
     }
+    &.home {
+        background-image: url("/assets/images/background.svg");
+        background-position: 100% 0%;
+        background-size:1000px;
+        background-repeat: no-repeat;
+    }
 }

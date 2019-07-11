@@ -12,14 +12,6 @@ footer {
         color: #0a121c;
         // border-top: 1px solid #f3dfd8;
     }
-    &.bordered {
-        @include r(320) {
-            border: none;
-        }
-        @include r(600) {
-            border-top: 3px solid #222;
-        }
-    }
 }
 
 .outline-newsletter-form {
