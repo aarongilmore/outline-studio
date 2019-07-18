@@ -31,7 +31,12 @@ body {
     &.home {
         background: url("/assets/images/background.svg");
         background-position: 100% 0%;
-        background-size:900px;
         background-repeat: no-repeat;
+        @include r(320) {
+            background-size:375px;
+        }
+        @include r(600) {
+            background-size:900px;
+        }
     }
 }
