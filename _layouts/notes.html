@@ -59,7 +59,7 @@
             </grid>
           </div>
           <grid columns=8 columns-s=1 class="ph5-ns mt2-ns ph3 ph0-ns">
-            <c span=3-6 span-s=5 class="pv3-ns pv2">
+            <c span=8 span-s=8 class="pv3-ns pv2">
                 {% for note in site.notes limit:5 %}
                     <div>
                         <img src="{{ note.img }}">
@@ -79,18 +79,6 @@
             </c>
           </grid>
       </section>
-      <!-- <div class="post-nav">
-          <div>
-            {% if page.previous.url %}
-            <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
-            {% endif %}
-          </div>
-          <div class="post-nav-next">
-            {% if page.next.url %}
-            <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
-            {% endif %}
-          </div>
-        </div> -->
       {% include footer.html %}
 
   </body>
