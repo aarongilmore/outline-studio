@@ -39,4 +39,15 @@ body {
             background-size:700px;
         }
     }
+    &.note {
+        background: url("/assets/images/strategy-4.svg");
+        background-position: 50% -20%;
+        background-repeat: no-repeat;
+        @include r(320) {
+            background-size:375px;
+        }
+        @include r(600) {
+            background-size:100%;
+        }
+    }
 }

@@ -49,21 +49,21 @@ blockquote {
     }
 }
 
-span.numbering {
-    font-size: 1em;
-    font-family: "Inter", sans-serif;
-    overflow: hidden;
-    font-weight: 300;
-    color: #cccccc;
+// span.numbering {
+//     font-size: 1em;
+//     font-family: "Inter", sans-serif;
+//     overflow: hidden;
+//     font-weight: 300;
+//     color: #cccccc;
 
-}
-span.numbering:after {
-    content:"";
-    display: inline-block;
-    height: 1px;
-    vertical-align: middle;
-    width: 4em;
-    margin-top: 0px;
-    margin-left: 10px;
-    background-color: #cccccc;
-}
+// }
+// span.numbering:after {
+//     content:"";
+//     display: inline-block;
+//     height: 1px;
+//     vertical-align: middle;
+//     width: 4em;
+//     margin-top: 0px;
+//     margin-left: 10px;
+//     background-color: #cccccc;
+// }
