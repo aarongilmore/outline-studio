@@ -14,7 +14,7 @@
 ///   }
 /// @site https://madebymike.com.au/writing/precise-control-responsive-typography/
 
-@mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 720px, $upper-range: 900px) {
+@mixin fluid-type($min-font-size: 12px, $max-font-size: 18px, $lower-range: 720px, $upper-range: 900px) {
 
   font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
   
@@ -28,7 +28,7 @@
 
 
 p {
-  @include fluid-type(18px, 22px);
+  @include fluid-type(18px, 20px);
 }
 
 h1 {

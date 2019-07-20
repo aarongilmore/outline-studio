@@ -5,7 +5,7 @@ categories:
 - essay
 cover_img: "/assets/posts/2019-06-22/cover.jpg"
 author: alyse_topel
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 social_image: 
 layout: note
 ---

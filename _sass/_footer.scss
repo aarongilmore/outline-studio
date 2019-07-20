@@ -1,10 +1,7 @@
 @import 'variables';
 
 footer {
-    // background-image: url("/assets/images/background-voice.svg");
-    background-position: 100% 0%;
-    background-size:500px;
-    background-repeat: no-repeat;
+    // max-width: 1000px;
     &.colophon {
         @include r(320) {
             text-align: center;
