@@ -1,10 +1,7 @@
 .hero {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     @include r(320) {
-        height: calc(var(--vh, 1vh) * 90);
-    }
-    @include r(600) {
-        height: calc(var(--vh, 1vh) * 100 - 100px);
+        height: calc(100vh - 75px);
     }
     h1 {
         line-height: 1.1em;
