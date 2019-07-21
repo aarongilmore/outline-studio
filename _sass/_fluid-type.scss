@@ -26,13 +26,12 @@
   }
 }
 
-
 p {
   @include fluid-type(18px, 20px);
 }
 
 h1 {
-  @include fluid-type(40px, 112px);
+  @include fluid-type(40px, 100px);
 }
 
 h2 {

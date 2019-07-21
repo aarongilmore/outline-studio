@@ -1,8 +1,15 @@
 .hero {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     @include r(320) {
-        height: calc(100vh - 75px);
+        height: calc(85vh);
     }
+    @include r(768) {
+        height: calc(80vh);
+    }
+    @include r(1024) {
+        height: calc(95vh);
+    }
+
     h1 {
         line-height: 1.1em;
         margin-bottom: 0;
@@ -10,14 +17,16 @@
         span {
             font-family: "Ivar Bold", serif;
         }
-        @include r(320) {
-            font-size: 2.2rem;
-        }
-        @include r(600) {
-            font-size: 6rem;
-        }
+
+        @include r(240)  {font-size: 1.5rem;}
+        @include r(320)  {font-size: 2.2rem;}
+        @include r(480)  {font-size: 2.5rem;}
+        @include r(768)  {font-size: 3.5rem;}
+        @include r(1024) {font-size: 4.8rem;}
+        @include r(1140) {font-size: 6rem;}
     }
 }
+
 .hero-slim {
     @include r(320) {
         background-color: $stone;
