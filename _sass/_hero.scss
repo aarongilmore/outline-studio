@@ -1,7 +1,7 @@
 .hero {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     @include r(320) {
-        height: calc(85vh);
+        height: calc(82vh);
     }
     @include r(768) {
         height: calc(80vh);
