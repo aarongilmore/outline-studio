@@ -50,8 +50,11 @@ $(function() {
 });
 
 // We listen to the resize event
-window.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+var root = document.documentElement;
+    if (
+        window.innerWidth > window.innerHeight ||
+        Math.abs(this.lastHeight - window.innerHeight) > 100
+    ) {
+        root.style.setProperty(`--window-vh`, window.innerHeight + 'px');
+        this.lastHeight = window.innerHeight;
+    }
