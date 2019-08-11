@@ -4,7 +4,6 @@
 @import "footer";
 @import "variables";
 @import "form";
-@import "buttons";
 @import "hero";
 @import "post-images";
 
@@ -29,19 +28,55 @@ body {
         padding-top: 100px; // for fixed nav bar
     }
     &.home {
-        background: url("/assets/images/background.svg");
+        background: url("/assets/images/background-home.svg");
         background-position: 100% 0%;
         background-repeat: no-repeat;
         @include r(320) {
             background-size:375px;
         }
         @include r(600) {
-            background-size:700px;
+            background-size:1200px;
+        }
+    }
+    &.notes {
+        background: url("/assets/images/background-notes.svg");
+        background-position: 50% -100%;
+        background-repeat: no-repeat;
+        @include r(320) {
+            background-size:375px;
+        }
+        @include r(600) {
+            background-size:90%;
         }
     }
     &.note {
-        background: url("/assets/images/strategy-4.svg");
-        background-position: 50% -20%;
+        background: url("/assets/images/background-note.svg");
+        background-repeat: no-repeat;
+        @include r(320) {
+            background-position: 100% -2%;
+            background-size:375px;
+        }
+        @include r(600) {
+            background-position: 50% -30%;
+            background-size:100%;
+        }
+        @include r(768) {
+            background-position: 50% -10%;
+            background-size:100%;
+        }
+
+        @include r(1024) {
+            background-position: 50% -30%;
+            background-size:100%;
+        }
+        @include r(1140) {
+            background-position: 50% -75%;
+            background-size:contain;
+        }
+    }
+    &.contact {
+        background: url("/assets/images/background-contact.svg");
+        background-position: 50% -40%;
         background-repeat: no-repeat;
         @include r(320) {
             background-size:375px;

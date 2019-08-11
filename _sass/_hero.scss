@@ -26,20 +26,3 @@
         @include r(1140) {font-size: 6rem;}
     }
 }
-
-.hero-slim {
-    @include r(320) {
-        background-color: $stone;
-        background-image: url("/assets/images/background-hero-slim.svg");
-        background-position: -10% 40%;
-        background-size:500px;
-        background-repeat: no-repeat;
-    }
-    @include r(600) {
-        background-color: $stone;
-        background-image: url("/assets/images/background-hero-slim.svg");
-        background-position: -5% 35%;
-        background-size:500px;
-        background-repeat: no-repeat;   
-    }
-}

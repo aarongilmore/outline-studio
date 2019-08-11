@@ -50,9 +50,10 @@
     </head>
   <body class="note">
       {% include header.html %}
+      <div class="cf w-90-l mw9 center relative contain">
       <section class="ph3 ph4-m ph5-ns pt3 pb5-ns mt6-ns mt6-m pb5">
-          <grid columns=8 columns-s=1 class="mw9 center mt4">
-            <c span=3-6 span-s=5>
+          <grid columns=8 columns-s=1 class="mt4">
+            <c span=8 span-s=8 class="mw7 center">
                 <span class="dib ttu gray">{{ page.categories }}</span>
                 <h1 class="f1 mv2">{{ page.title }}</h1>
                 <!-- Look the author details up from the site config. -->
@@ -83,6 +84,6 @@
           </grid>
       </section>
       {% include footer.html %}
-
+    </div>
   </body>
 </html>

@@ -52,7 +52,7 @@
       {% include header.html %}
       <section class="ph3 ph4-m ph5-ns pb5-ns pv3 ma0 mt6-m hero flex items-end">
         <h1 class="f-headline-ns f1 mw8 dib v-btm pb4 relative">
-          We help our partners speak clearly and consistently. <span class="">Together, we'll find your voice.</span>
+          <del>We help our partners speak clearly and consistently.</del> <span class="">Together, we'll find your voice.</span>
           <img src="/assets/images/circle.png" alt="" style="position: absolute;
           top: 0;
           left: 0;
@@ -66,7 +66,7 @@
       <div class="cf w-90-l mw9 center relative contain">
       <section class="ph3 ph4-m ph5-ns pv2">
         <grid columns=8 columns-s=1 class="mt2-ns">
-            <c span=3-8 span-s=1>
+            <c span=8 span-s=1>
                 <h2 class="f1 mb4">About Us &mdash;</h2>
                 {{content}}
             </c>
@@ -75,35 +75,35 @@
 
       <section class="ph3 ph4-m ph5-ns pv2">
       <grid columns=8 columns-s=1 class="mt2-ns">
-          <c span=3-8 span-s=1 class="mv4-ns mv3-m">
+          <c span=8 span-s=1 class="mv4-ns mv3-m">
               <h2 class="f1 mb4">Recent Notes &mdash;</h2>
               <div class="flex flex-row-ns flex-column flex-wrap-ns">
-                {% for note in site.notes limit:2 %}
-                  <div class="w-100 w-50-ns pa0 pr5-ns mb4">
-                    <a href="{{ note.url }}" class="link black">
-                    <img src="{{ note.cover_img }}">
-                    <h3 class="f2 mb0">{{ note.title }}</h3>
-                    {{ note.excerpt }}
-                    <!-- Look the author details up from the site config. -->
-                    {% assign author = site.data.authors[note.author] %}
-                    <!-- Output author details if some exist. -->
-                    {% if author %}
-                      <span class="gray">
-                          <!-- Personal Info. -->
-                          Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
-                      </span>
-                    {% endif %}
-                    </a>
-                  </div>
-                {% endfor %}
-              </div>
-          </c>
+                  {% for note in site.notes limit:3 %}
+                    <div class="w-100 w-third-ns pa0 pr5-ns mb4">
+                      <a href="{{ note.url }}" class="link black">
+                      <img src="{{ note.cover_img }}">
+                      <h3 class="f2 mb0">{{ note.title }}</h3>
+                      {{ note.excerpt }}
+                      <!-- Look the author details up from the site config. -->
+                      {% assign author = site.data.authors[note.author] %}
+                      <!-- Output author details if some exist. -->
+                      {% if author %}
+                        <span class="gray">
+                            <!-- Personal Info. -->
+                            Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                        </span>
+                      {% endif %}
+                      </a>
+                    </div>
+                  {% endfor %}
+                </div>
+          </c> 
       </grid>
     </section>
-    <section class="art-feature">
-      <img src="/assets/images/art-feat.svg" alt="" class="w-100">
-    </section>
     {% include footer.html %}
+    <section class="art-feature">
+      <img src="/assets/images/feature.svg" alt="" class="w-100">
+    </section>
   </div>
   </body>
 </html>

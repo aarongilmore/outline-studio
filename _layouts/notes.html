@@ -48,37 +48,38 @@
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
       <link rel="stylesheet" href="/assets/css/style.css">        
     </head>
-  <body>
+  <body class="notes">
       {% include header.html %}
-      <section>
-          <div class="ph0 pv0 pv4-ns pv3 bb b--light-gray hero-slim">
-            <grid columns=8 columns-s=1 class="ph5-ns ph3">
-              <c span=3-6 span-s=1>
-                <h1 class="f-subheadline-ns f2 mv2">Notes</h1>
-              </c>
-            </grid>
-          </div>
-          <grid columns=8 columns-s=1 class="ph5-ns mt2-ns ph3 ph0-ns">
-            <c span=3-6 span-s=5 class="pv3-ns pv2">
-                {% for note in site.notes limit:5 %}
-                    <div>
-                        <img src="{{ note.img }}">
-                        <a href="{{ note.url }}" class="link dim black"><h3 class="f2 mv2-ns mv1">{{ note.title }}</h3></a>
+      <div class="cf w-90-l mw9 center relative contain">
+      <section class="ph3 ph4-m ph5-ns pv2">
+          <grid columns=8 columns-s=1 class="mt2-ns">
+              <c span=8 span-s=1 class="mv4-ns mv3-m">
+                  <h2 class="f1 mb4">Notes &mdash;</h2>
+                  <!-- {{ content }} -->
+                  <div class="flex flex-row-ns flex-column flex-wrap-ns">
+                    {% for note in site.notes limit:3 %}
+                      <div class="w-100 w-third-ns pa0 pr5-ns mb4">
+                        <a href="{{ note.url }}" class="link black">
+                        <img src="{{ note.cover_img }}">
+                        <h3 class="f2 mb0">{{ note.title }}</h3>
                         {{ note.excerpt }}
                         <!-- Look the author details up from the site config. -->
                         {% assign author = site.data.authors[note.author] %}
                         <!-- Output author details if some exist. -->
                         {% if author %}
-                            <span class="db mb4">
-                                <!-- Personal Info. -->
-                                Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
-                            </span>
+                          <span class="gray">
+                              <!-- Personal Info. -->
+                              Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                          </span>
                         {% endif %}
-                    </div>
-                {% endfor %}
-            </c>
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+              </c>
           </grid>
       </section>
       {% include footer.html %}
+    </div>
   </body>
 </html>
