@@ -83,14 +83,14 @@
                       <a href="{{ note.url }}" class="link black">
                       <img src="{{ note.cover_img }}">
                       <h3 class="f2 mb0">{{ note.title }}</h3>
-                      {{ note.excerpt }}
+                      {{ note.excerpt | truncate: 95 }}</br>
                       <!-- Look the author details up from the site config. -->
                       {% assign author = site.data.authors[note.author] %}
                       <!-- Output author details if some exist. -->
                       {% if author %}
-                        <span class="gray">
+                        <span class="f6 gray mt3">
                             <!-- Personal Info. -->
-                            Posted by <a href="{{ author.web }}" class="link dim dark-gray underline">{{ author.name }}</a> on {{ note.date | date: '%B %d, %Y' }}
+                            Published on {{ note.date | date: '%B %d, %Y' }} by <a href="{{ author.web }}" class="f6 link dim dark-gray underline">{{ author.name }}</a>
                         </span>
                       {% endif %}
                       </a>
