@@ -1,8 +1,8 @@
 ---
 title: The New Yorker
 date: 2019-08-18 17:34:00 +02:00
-author: Daniel
-cover_image: "/uploads/DSCF6097-1.jpg"
+author: Daniel Agee
+cover_image: "/uploads/image.jpg"
 excerpt: This is an excerpt.
 ---
 
