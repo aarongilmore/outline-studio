@@ -21,6 +21,9 @@ defaults:
   values:
     layout: note
     author: ''
+    cover_img: 
+    excerpt: 
+    social_image: 
 permalink: pretty
 sass:
   sass_dir: _sass
