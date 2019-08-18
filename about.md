@@ -9,5 +9,5 @@ Already that large? We triage your current content and strategy, finding what wo
 
 We prefer to iterate on the work together. We integrate directly with you and your team, learning about your business and what makes it better. Through conversation and research, we get to know your industry, offerings, and competitors. We never present ideas created in a vacuum.
 
-![Alyse Fitzgerald](/uploads/a74aaf6096219742-DSCF5472.jpg){:class="full-width-image"}
+![Alyse Fitzgerald](/uploads/a74aaf6096219742-DSCF5472.jpg)
 
