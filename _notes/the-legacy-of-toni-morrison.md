@@ -3,10 +3,9 @@ title: The Legacy of Toni Morrison
 date: 2019-06-26 00:00:00 +02:00
 categories:
 - tone
-cover_img: "/uploads/tm-2019.jpg"
 author: daniel_agee
 excerpt: A post excerpt
-social_image: 
+cover_img: "/uploads/tm-2019.jpg"
 layout: note
 ---
 
