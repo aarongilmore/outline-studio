@@ -3,7 +3,8 @@ title: Fear Less
 date: 2019-06-11 00:00:00 +02:00
 categories:
 - tone of voice
-author: alyse_topel
+author: Alyse
+cover_image: "/uploads/image%202.2.jpg"
 excerpt: I was in high school in the tenth grade! One of my friends was thinking about
   applying to art and design school, and had a student prospective book featuring
   all the classes and majors.
