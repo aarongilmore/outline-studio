@@ -14,10 +14,6 @@
         line-height: 1.1em;
         margin-bottom: 0;
         font-family: "Ivar Medium", serif;
-        span {
-            font-family: "Ivar Bold", serif;
-        }
-
         @include r(240)  {font-size: 1.5rem;}
         @include r(320)  {font-size: 4.5rem;}
         @include r(480)  {font-size: 5.2rem;}
