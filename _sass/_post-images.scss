@@ -1,9 +1,16 @@
+.post-cover {
+	display: block;
+	max-width:405px;
+	max-height:222px;
+	width: auto;
+	height: auto;
+}
 .post-images {
-    // left: 50%;
-	// margin-left: -50vw;
-	// margin-right: -50vw;
-	// max-width: 100vw;
-	// position: relative;
-	// right: 50%;
-	// width: 100vw;
+    left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
 }
