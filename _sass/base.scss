@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #fdfcfb;
+    background-color: #ffffff;
     padding: 0;
     font-family: "Inter Light", sans-serif;
     // -moz-osx-font-smoothing: grayscale;
@@ -28,7 +28,7 @@ body {
         padding-top: 100px; // for fixed nav bar
     }
     &.home {
-        background: url("/assets/images/background-home.svg");
+        background-image: url("/assets/images/background-home.svg");
         background-position: 100% 0%;
         background-repeat: no-repeat;
         @include r(320) {
@@ -39,46 +39,39 @@ body {
         }
     }
     &.notes {
-        background: url("/assets/images/background-notes.svg");
-        background-position: 50% -100%;
-        background-repeat: no-repeat;
+        background-image: url("/assets/images/background-notes.svg");
+        background-repeat: no-repeat;;
         @include r(320) {
-            background-size:375px;
+            background-size:575px;
+            background-position: 50% 0%;
         }
         @include r(600) {
+            background-position: 50% -450px;            
             background-size:90%;
         }
     }
     &.note {
-        background: url("/assets/images/background-note.svg");
+        background-image: url("/assets/images/background-note.svg");
         background-repeat: no-repeat;
         @include r(320) {
-            background-position: 100% -2%;
-            background-size:375px;
+            background-position: 50% -180px;
+            background-size:575px;
         }
         @include r(600) {
-            background-position: 50% -30%;
+            background-position: 50% -700px;
             background-size:100%;
         }
-        @include r(768) {
-            background-position: 50% -10%;
-            background-size:100%;
+        .copy {
+            background-color: transparent;
+            @include r(600) {
+                background-color: white;
+            }
         }
-
-        @include r(1024) {
-            background-position: 50% -30%;
-            background-size:100%;
-        }
-        @include r(1140) {
-            background-position: 50% -75%;
-            background-size:contain;
-        }
-        background-position: 50% 20%;
-        background-size:100%;
     }
     &.contact {
-        background: url("/assets/images/background-contact.svg");
-        background-position: 50% -40%;
+        // background-color: #f8f8f8;
+        background-image: url("/assets/images/background-contact.svg");
+        background-position: 50% 0%;
         background-repeat: no-repeat;
         @include r(320) {
             background-size:375px;

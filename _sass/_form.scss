@@ -77,3 +77,77 @@ button {
   padding: 1em 2em;
 }
 
+.outline-newsletter-form {
+  margin-top: 0px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.newsletter-form form {
+  @include r(320) {
+      border: 3px solid $dark-gray;
+      flex-direction: column;
+  }
+  @include r(600) {
+      border: 3px solid $dark-gray;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      -webkit-align-items: stretch;
+      -moz-align-items: stretch;
+      -ms-align-items: stretch;
+      -o-align-items: stretch;
+      align-items: stretch;
+  }
+}
+
+.newsletter-form form input[type="email"] {
+  @include r(320) {
+      width: 100%;
+      border: 0px;
+  }
+  @include r(600) {
+      width: 100%;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      -o-flex: 1;
+      flex: 1;
+      border: 0;
+      border-right-color: currentcolor;
+      border-right-style: none;
+      border-right-width: 0px;
+      padding: 20px 0px 20px 20px;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.22;
+      background-color: #ffffff;
+      color: #0a121c;
+      border-radius: 0;
+      outline: none;
+  }
+}
+
+.outline-newsletter-form form [type="submit"] {
+  @include r(320){width: 100%;}
+  @include r(600){width: 35%;}
+  padding: 0px 5px;
+  color: $dark-gray;
+  font-size: 16px;
+  cursor: pointer;
+  background: $dark-gray;
+  color: #ffffff;
+  border-radius: 0px;
+  border: 1px solid $dark-gray;
+  &:hover {
+      background: lighten($dark-gray, 30%);
+  }
+  @include r(320) {
+      // width: 100%;
+      display: block;
+  }
+}
+
