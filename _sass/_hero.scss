@@ -4,10 +4,10 @@
         height: calc(82vh);
     }
     @include r(768) {
-        height: calc(80vh);
+        height: calc(50vh);
     }
     @include r(1024) {
-        height: calc(90vh);
+        height: calc(65vh);
     }
 
     h1 {
@@ -23,6 +23,6 @@
         @include r(480)  {font-size: 2.5rem;}
         @include r(768)  {font-size: 3.5rem;}
         @include r(1024) {font-size: 4.8rem;}
-        @include r(1140) {font-size: 6rem;}
+        @include r(1140) {font-size: 10rem;}
     }
 }
