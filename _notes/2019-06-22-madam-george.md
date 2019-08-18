@@ -5,14 +5,10 @@ categories:
 - essay
 cover_img: "/assets/posts/2019-06-22/cover.jpg"
 author: alyse_topel
-excerpt_separator: "<!--more-->"
+excerpt: "I discovered Ursula K. Le Guin quite by accident — on the library shelf, but not in the science fiction section. I was browsing the literary journals, which were stood up like little jewels in the entranceway of the library at Willamette University in Salem, Oregon."
 social_image: 
 layout: note
 ---
-
-I discovered Ursula K. Le Guin quite by accident — on the library shelf, but not in the science fiction section. I was browsing the literary journals, which were stood up like little jewels in the entranceway of the library at Willamette University in Salem, Oregon. 
-
-<!--more-->
 
 I discovered Ursula K. Le Guin quite by accident — on the library shelf, but not in the science fiction section. I was browsing the literary journals, which were stood up like little jewels in the entranceway of the library at Willamette University in Salem, Oregon.
 

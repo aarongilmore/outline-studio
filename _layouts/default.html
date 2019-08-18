@@ -86,7 +86,7 @@
                       <a href="{{ note.url }}" class="link black">
                       <img src="{{ note.cover_img }}" class="post-cover">
                       <h3 class="f2 mb0 bb bw3">{{ note.title }}</h3>
-                      {{ note.excerpt | truncate: 95 }}</br>
+                      <p>{{ note.excerpt | truncate: 95 }}</p>
                       <!-- Look the author details up from the site config. -->
                       {% assign author = site.data.authors[note.author] %}
                       <!-- Output author details if some exist. -->
