@@ -2,9 +2,6 @@
 title: Outline Studio
 timezone: Europe/Amsterdam
 collections:
-  authors:
-    title: Authors
-    output: true
   notes:
     title: Notes
     output: true
