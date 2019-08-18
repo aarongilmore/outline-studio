@@ -3,8 +3,12 @@ title: The Legacy of Toni Morrison
 date: 2019-06-26 00:00:00 +02:00
 categories:
 - tone
-author: daniel_agee
-excerpt: A post excerpt
+author: Daniel
+cover_image: "/uploads/tm-2019.jpg"
+excerpt: I discovered Ursula K. Le Guin quite by accident — on the library shelf,
+  but not in the science fiction section. I was browsing the literary journals, which
+  were stood up like little jewels in the entranceway of the library at Willamette
+  University in Salem, Oregon.
 cover_img: "/uploads/tm-2019.jpg"
 layout: note
 ---
