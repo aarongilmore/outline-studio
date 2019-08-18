@@ -9,7 +9,6 @@ excerpt: I discovered Ursula K. Le Guin quite by accident — on the library
   but not in the science fiction section. I was browsing the literary journals, which
   were stood up like little jewels in the entranceway of the library at Willamette
   University in Salem, Oregon.
-cover_img: "/assets/posts/2019-06-22/cover.jpg"
 layout: note
 ---
 
