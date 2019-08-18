@@ -21,7 +21,7 @@ defaults:
   values:
     layout: note
     author: ''
-    cover_img: 
+    cover_image: 
     excerpt: 
     social_image: 
 permalink: pretty
