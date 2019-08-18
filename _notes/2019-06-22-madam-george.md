@@ -17,6 +17,8 @@ I discovered Ursula K. Le Guin quite by accident — on the library shelf, b
 
 I had been sent to that section of the library by my speech coach — sent to find a suitably thought-provoking and emotionally stimulating passage, with less than 50 percent dialogue, that I could read aloud without rushing in less than 8 minutes.
 
+![Ursula K. le Guin](/assets/posts/2019-06-11/le-guin.jpg)
+
 My task was to find a piece suitable for entering in competition in the Prose category, which demands of its high school competitors that they be “a master storyteller, drawing the audience in with a well-cut and interesting piece, energy and variety in vocal inflection, and the ability to engross the listener in what is being read.”
 
 ![Ursula K. le Guin](/assets/posts/2019-06-11/le-guin.jpg){:class="full-width-image"}
