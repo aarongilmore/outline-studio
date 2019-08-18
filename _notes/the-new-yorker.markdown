@@ -1,6 +1,7 @@
 ---
 title: The New Yorker
 date: 2019-08-18 17:34:00 +02:00
+author: daniel_agee
 ---
 
 Already that large? We triage your current content and strategy, finding what works and what’s weighing you down. We’ll help you find a cohesive voice and create a style guide to match.
