@@ -3,7 +3,8 @@ title: Hate That Doesn't Hide
 date: 2019-06-22 00:00:00 +02:00
 categories:
 - essay
-author: alyse_topel
+author: Alyse
+cover_image: "/uploads/a74aaf6096219742-DSCF5472.jpg"
 excerpt: I discovered Ursula K. Le Guin quite by accident — on the library shelf,
   but not in the science fiction section. I was browsing the literary journals, which
   were stood up like little jewels in the entranceway of the library at Willamette
