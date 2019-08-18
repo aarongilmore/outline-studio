@@ -1,5 +1,5 @@
 ---
-title: On le Guin
+title: Hate That Doesn't Hide
 date: 2019-06-22 00:00:00 +02:00
 categories:
 - essay
