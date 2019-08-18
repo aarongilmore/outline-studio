@@ -1,7 +1,7 @@
 .post-cover {
 	display: block;
-	max-width:405px;
-	max-height:222px;
+	min-width:405px;
+	min-height:200px;
 	width: auto;
 	height: auto;
 }
