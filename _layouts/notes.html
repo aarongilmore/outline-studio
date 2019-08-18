@@ -57,7 +57,7 @@
                   <h2 class="f1 mb4">Notes &mdash;</h2>
                   <!-- {{ content }} -->
                   <div class="flex flex-row-ns flex-column flex-wrap-ns">
-                    {% for note in site.notes limit:3 %}
+                    {% for note in site.notes %}
                       <div class="w-100 w-third-ns pa0 pr5-ns mb4">
                         <a href="{{ note.url }}" class="link black">
                         <img src="{{ note.cover_img }}">
