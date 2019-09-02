@@ -10,10 +10,10 @@
         margin-bottom: 0;
         font-family: "Ivar Bold", serif;
         @include r(240)  {font-size: 1.5rem;}
-        @include r(320)  {font-size: 5.2rem;}
-        @include r(480)  {font-size: 5.2rem;}
-        @include r(768)  {font-size: 6.5rem;}
-        @include r(1024) {font-size: 8.8rem;}
-        @include r(1140) {font-size: 10rem;}
+        @include r(320)  {font-size: 20vw;}
+        @include r(480)  {font-size: 20vw;}
+        @include r(768)  {font-size: 9vw;}
+        // @include r(1024) {font-size: 9vw;}
+        // @include r(1140) {font-size: 9vw;}
     }
 }
