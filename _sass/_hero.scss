@@ -1,5 +1,10 @@
 .hero {
-    height: 67vh;
+    @include r(320) {
+        height: 75vh;
+    }
+    @include r(600) {
+        height: 67vh;
+    }
     h1 {
         line-height: 1.1em;
         margin-bottom: 0;
