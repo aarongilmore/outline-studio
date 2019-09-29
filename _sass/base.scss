@@ -43,10 +43,10 @@ body {
         background-repeat: no-repeat;;
         @include r(320) {
             background-size:575px;
-            background-position: 50% 0%;
+            background-position: 50% -6%;
         }
         @include r(600) {
-            background-position: 50% -450px;            
+            background-position: 50% -375px;            
             background-size:90%;
         }
     }
