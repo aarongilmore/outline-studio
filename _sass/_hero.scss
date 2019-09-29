@@ -3,17 +3,15 @@
         height: 77vh;
     }
     @include r(600) {
-        height: 67vh;
+        height: 60vh;
     }
     h1 {
+        @include r(240)  {font-size: 5em;}
+        @include r(320)  {font-size: 5em;}
+        @include r(480)  {font-size: 7em;}
+        @include r(1024)  {font-size: 10em;}
         line-height: 1.1em;
         margin-bottom: 0;
         font-family: "Ivar Bold", serif;
-        @include r(240)  {font-size: 1.5rem;}
-        @include r(320)  {font-size: 20vw;}
-        @include r(480)  {font-size: 20vw;}
-        @include r(768)  {font-size: 9vw;}
-        // @include r(1024) {font-size: 9vw;}
-        // @include r(1140) {font-size: 9vw;}
     }
 }
