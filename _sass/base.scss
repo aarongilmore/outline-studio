@@ -29,7 +29,7 @@ body {
     }
     &.home {
         background-image: url("/assets/images/background-home.svg");
-        // background-position: 100% 0%;
+        background-position: 100% 0%;
         background-repeat: no-repeat;
         @include r(320) {
             background-size:375px;
