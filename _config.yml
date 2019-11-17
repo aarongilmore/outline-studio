@@ -2,7 +2,7 @@
 title: Outline Studio
 timezone: Europe/Amsterdam
 collections:
-  case_studies:
+  case-studies:
     title: Case Studies
     output: true
   notes:
