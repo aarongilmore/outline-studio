@@ -2,7 +2,7 @@
 title: Hate That Doesn't Hide
 date: 2019-06-22 00:00:00 +02:00
 categories:
-- essay
+- notes
 author: Alyse Topel
 cover_image: "/uploads/a74aaf6096219742-DSCF5472.jpg"
 excerpt: I discovered Ursula K. Le Guin quite by accident — on the library shelf,
