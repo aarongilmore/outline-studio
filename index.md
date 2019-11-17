@@ -1,5 +1,5 @@
 ---
-title: outline.studio
+title: Home | outline.studio
 layout: default
 ---
 
