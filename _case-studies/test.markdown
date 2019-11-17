@@ -7,4 +7,4 @@ excerpt: This is an excerpt on the Patagonia case study.
 layout: case-study
 ---
 
-This is a case study on Patagonia.
+Patagonia is a region encompassing the vast southernmost tip of South America, shared by Argentina and Chile, with the Andes Mountains as its dividing line. The Argentine side features arid steppes, grasslands and deserts, while the Chilean has glacial fjords and temperate rainforest. Argentina’s famed RN-40 highway passes the pinnacles of Monte Fitz Roy and Perito Moreno Glacier in Los Glaciares National Park.
