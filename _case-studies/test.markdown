@@ -6,7 +6,7 @@ categories:
 cover_image: "/uploads/arto-marttinen-6Wt0kG2zK4A-unsplash.jpg"
 social_image: 
 excerpt: This is an excerpt on the Patagonia case study.
-color: "#ecf7ff"
+color: "#f7fcff"
 layout: case-study
 ---
 
