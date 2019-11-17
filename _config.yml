@@ -2,7 +2,7 @@
 title: Outline Studio
 timezone: Europe/Amsterdam
 collections:
-  case_studies:
+  case-studies:
     title: Case Studies
     output: true
   notes:
@@ -15,11 +15,12 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
+- 
+  scope:
     path: ''
-    type: notes
+    type: "notes"
   values:
-    layout: note
+    layout: "note"
     author: ''
     cover_image: 
     excerpt: 
