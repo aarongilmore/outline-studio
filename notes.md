@@ -1,5 +1,5 @@
 ---
-title: Notes • outline.studio
+title: Notes | outline.studio
 layout: notes
 ---
 
