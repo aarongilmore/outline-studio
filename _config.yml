@@ -15,12 +15,11 @@ collections:
     title: Uploads
     output: true
 defaults:
-- 
-  scope:
+- scope:
     path: ''
-    type: "notes"
+    type: notes
   values:
-    layout: "note"
+    layout: note
     author: ''
     cover_image: 
     excerpt: 
