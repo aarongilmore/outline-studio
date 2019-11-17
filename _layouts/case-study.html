@@ -23,7 +23,7 @@
       <meta name="twitter:url" content="http://outline.studio/" />
       <meta name="twitter:title" content="{{ page.title }}" />
       <meta name="twitter:description" content="" />
-      <meta name="twitter:image" content="/assets/images/outline-social.jpg" />
+      <meta name="twitter:image" content="{{ page.social_image }}" />
   
     
       <link rel="home" href="http://outline.studio/" />
@@ -48,35 +48,39 @@
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
       <link rel="stylesheet" href="/assets/css/style.css">        
     </head>
-  <body class="notes">
+  <body class="note">
       {% include header.html %}
       <div class="cf w-90-l mw9 center relative contain">
-      <section class="ph3 ph4-m ph5-ns pv2">
-          <grid columns=8 columns-s=1 class="mt2-ns">
-              <c span=8 span-s=1 class="mv4-ns mv3-m">
-                  <h2 class="f1 mb4 mt5">Case Studies &mdash;</h2>
-                  <!-- {{ content }} -->
-                  <div class="flex flex-row-ns flex-column flex-wrap-ns">
-                    {% for case-study in site.case-studies %}
-                      <div class="w-100 w-third-ns pa0 pr5-ns mb4">
-                        <a href="{{ case-study.url }}" class="link black">
-                        <img src="{{ case-study.cover_image }}">
-                        <h3 class="f2 mb0 bb bw3">{{ case-study.title }}</h3>
-                        <p>{{ case-study.excerpt | truncate: 95 }}</p>
-                        <!-- Look the author details up from the site config. -->
-                        {% assign author = site.data.authors[case-study.author] %}
-                        <!-- Output author details if some exist. -->
-                        {% if author %}
-                        <span class="f6 gray mt3">
-                            <!-- Personal Info. -->
-                            Published on {{ case-study.date | date: '%B %d, %Y' }} by <a href="{{ author.web }}" class="f6 link dim dark-gray underline">{{ author.name }}</a>
-                        </span>
-                        {% endif %}
-                        </a>
-                      </div>
-                    {% endfor %}
-                  </div>
-              </c>
+      <section class="ph3 ph4-m ph5-ns pt3 pb5-ns mt3 pb5">
+          <grid columns=8 columns-s=1 class="mt4">
+            <c span=8 span-s=8 class="mw7 center pa5-ns copy">
+                <span class="dib ttu gray">{{ page.categories }}</span>
+                <h1 class="f1 mv2">{{ page.title }}</h1>
+                <!-- Look the author details up from the site config. -->
+                {% assign author = site.data.authors[page.author] %}
+                <!-- Output author details if some exist. -->
+                {% if author %}
+                  <span class="dib mb3 gray">
+                      <!-- Personal Info. -->
+                      Posted by <a href="{{ author.web }}" class="link dim dark-gray pb1 bb">{{ author.name }}</a> on {{ page.date | date: '%B %d, %Y' }}
+                  </span>
+                {% endif %}
+                {{ content }}
+            </c>
+            <!-- <c span=8 span-s=8 class="mv3">
+                <div class="fl">
+                  {% if page.previous.url %}
+                  <small class="mb1 db">Newer</small>
+                  <a href="{{page.previous.url}}" class="link gray dim"><- {{page.previous.title}}</a>
+                  {% endif %}
+                </div>
+                <div class="fr">
+                  {% if page.next.url %}
+                  <small class="mb1 db">Older</small>
+                  <a href="{{page.next.url}}" class="link gray dim">{{page.next.title}} -></a>
+                  {% endif %}
+                </div>
+              </c> -->
           </grid>
       </section>
       {% include footer.html %}
