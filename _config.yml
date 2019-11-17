@@ -2,14 +2,14 @@
 title: Outline Studio
 timezone: Europe/Amsterdam
 collections:
+  case-studies:
+    title: Case Studies
+    output: true
   notes:
     title: Notes
     output: true
   posts:
     title: Posts
-    output: true
-  work:
-    title: Projects
     output: true
   uploads:
     title: Uploads
