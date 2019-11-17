@@ -1,5 +1,5 @@
 ---
-title: How We Helped Patagonia Find Their Voice
+title: Helping Patagonia Find Their Voice
 date: 2019-11-17 16:51:00 +01:00
 categories:
 - Case Study
